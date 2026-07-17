@@ -8,11 +8,11 @@
 
 ## Cores
 
-- **Fundo principal:** Off-white / creme — `#F5F1E8` *(extraído do logo, confirmar com o usuário se possível)*
+- **Fundo principal:** Off-white / creme — `#F9F8F3` *(pixel-sampled do cartão de fundo do logo)*
 
-- **Cor de destaque / CTA:** Laranja/dourado — `#E0932E` *(extraído do logo)*
+- **Cor de destaque / CTA:** Laranja/dourado — `#E19E4D` *(pixel-sampled do ícone do logo)*
 
-- **Texto principal:** Azul-marinho — `#1B3A5C` *(extraído do logo)*
+- **Texto principal:** Azul-marinho — `#172938` *(pixel-sampled do texto do logo)*
 
 - **Fundo alternativo / cards:** Branco — `#FFFFFF`
 
@@ -55,9 +55,10 @@ de voz formal da marca. Sem gírias, sem informalidade excessiva.
 
 ## Logo
 
-- **Arquivo:** `identidade/logo.png`
+- **Arquivo (uso em peças/composições):** `identidade/logo-transparente.png` — fundo removido, só ícone + texto. Usar esse pra qualquer arte com fundo próprio (capas, carrosséis, slides).
+- **Arquivo original:** `identidade/logo.png` — versão com cartão de fundo creme, útil só quando o logo aparece isolado sem composição por trás.
 - **Versão pra fundo escuro:** *(não fornecida — pendente)*
-- **Onde usar:** slide final do carrossel (CTA), header de propostas, slides de apresentação
+- **Onde usar:** slide final do carrossel (CTA), header de propostas, slides de apresentação, capas de redes sociais
 - **Tamanho sugerido:** largura entre 120-200px nos HTMLs
 
 ---

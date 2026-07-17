@@ -22,3 +22,35 @@ a operação de marketing pra gerar demanda é a prioridade número um
 ## Contexto com prazo
 
 *(nenhum prazo específico registrado ainda)*
+
+## Pesquisa de mercado — Balneário Camboriú (2026-07-17)
+
+Documento completo em `marketing/pesquisa/plano-ataque-digital-bc-2026-07-17.md`.
+Análise das 3 imobiliárias líderes de BC (Bruno Cassola, Felicittà, Imobille) e
+brechas digitais não ocupadas por nenhuma delas. Registrar aqui só o que é
+acionável — consultar o documento completo pra contexto e fontes.
+
+**Brechas priorizadas (nenhuma das líderes faz bem):**
+1. Atendimento bilíngue PT/EN/ES pra comprador estrangeiro
+2. Tour virtual 360 em escala (nenhuma cobre o portfólio inteiro)
+3. Conteúdo educativo próprio sobre investimento (não é o mesmo que blog de bairro)
+4. CRM com nutrição segmentada pós-visita (follow-up automatizado)
+5. LinkedIn B2B — quase nenhuma tem presença lá
+6. Calculadoras (ITBI, financiamento, ROI de aluguel) — nenhuma tem
+7. Pinterest e YouTube long-form — subexplorados
+8. Marca institucional independente do fundador
+9. Parcerias com hotelaria/beach clubs
+10. Dashboard público de mercado (preço por bairro, evolução)
+
+**Quick wins sugeridos (0-30 dias):** LP "Anuncie seu imóvel" por bairro,
+Google Meu Negócio ativo com posts semanais, 3 posts de blog SEO/semana em
+long-tail, triagem de leads no WhatsApp com resposta em até 2 min.
+
+**Confirmado:** Balneário Camboriú é a praça de atuação da AFS. Essas brechas
+valem como prioridade real, não só referência.
+
+**Site institucional:** essa pesquisa foi o motivo de mandar o plano — vai
+virar o site da AFS. Briefing derivado em
+`marketing/pesquisa/site-requisitos-2026-07-17.md`, com requisitos
+obrigatórios e desejáveis. Bloqueado até o usuário enviar (1) mínimo de 20
+imóveis e (2) um site de referência visual.
