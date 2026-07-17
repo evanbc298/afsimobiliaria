@@ -5,8 +5,17 @@
 
 ## Tom de voz
 
+Direto e confiante, com foco em transmitir confiança na compra e venda
+de imóveis. Referência do próprio usuário: "a melhor imobiliária para
+confiar na compra e venda dos seus imóveis." Tom mais formal do que
+descontraído.
+
 ## O que evitar
 
+- Gírias
+
 ## Estilo geral
+
+Comunicação profissional e objetiva, sem informalidade excessiva.
 
 ## Preferências adicionais

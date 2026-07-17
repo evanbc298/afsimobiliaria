@@ -5,17 +5,13 @@
 
 **Nome:** AFS Imobiliária
 **Negócio:** Imobiliária
-**O que faz:** *(a preencher — pendente)*
+**O que faz:** Assessoria imobiliária completa — do início do processo até a entrega das chaves — pro comprador
 **Perfil:** Empresa
-**Atende clientes:** *(a preencher — pendente)*
-**Equipe:** Usuário é sócio da empresa (composição completa da equipe pendente)
+**Atende clientes:** Os três perfis: famílias buscando o primeiro imóvel, investidores e compradores em geral
+**Equipe:** Só o usuário (sócio) por enquanto
 **Ferramentas:** *(a preencher — pendente)*
-**Principais entregas:** *(a preencher — pendente)*
+**Principais entregas:** Assessoria de compra e venda de imóveis, do início ao pós-venda
 
 ## Contexto adicional
 
-Setup do `/instalar` iniciado em 2026-07-17 e pausado antes de terminar a
-entrevista. Perfil (Empresa) e nome confirmados. Restante das perguntas
-(o que a empresa entrega, perfil de cliente, tom de voz, gargalo atual,
-identidade visual) ainda não foi respondido — completar quando o usuário
-retomar o `/instalar` ou editar este arquivo diretamente.
+CRECI 31495. Setup do `/instalar` concluído em 2026-07-17.

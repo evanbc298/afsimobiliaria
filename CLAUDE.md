@@ -1,11 +1,59 @@
-# MazyOS — Sistema operacional do negócio
+# AFS Imobiliária — MazyOS
 
 Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
 do MazyOS — como o Claude lê o contexto, aprende com correções, mantém
 tudo atualizado e cria skills novas conforme a operação evolui.
 
-Esse arquivo é editável. Quando o `/instalar` rodar, ele complementa o
-final dessa página com as regras específicas do seu negócio.
+Esse arquivo é editável.
+
+## O que é esse workspace
+
+Operação da AFS Imobiliária — assessoria imobiliária completa, do
+início do processo até a entrega das chaves.
+
+**Estrutura de pastas:**
+- `_memoria/` — quem é a empresa, como falamos, foco atual
+- `identidade/` — marca aplicada em tudo que o sistema gera
+- `marketing/` — campanhas, conteúdo, mídia paga
+- `saidas/` — documentos pontuais
+- `dados/` — arquivos a analisar
+
+## Sobre a empresa
+
+AFS Imobiliária (CRECI 31495) é uma imobiliária que presta assessoria
+completa de compra e venda, do início do processo até a entrega das
+chaves. Atende três perfis de cliente: famílias buscando o primeiro
+imóvel, investidores e compradores em geral. Hoje é tocada só pelo
+sócio fundador — sem equipe adicional ainda.
+
+## O que mais fazemos aqui
+
+- Marketing pra geração de demanda e clientes qualificados (gargalo atual)
+- Conteúdo e presença digital da marca
+- Estruturação da operação conforme o negócio cresce
+
+## Tom de voz
+
+Direto e confiante, tom formal — sem gírias. Referência: "a melhor
+imobiliária para confiar na compra e venda dos seus imóveis."
+
+Evitar: gírias, informalidade excessiva.
+
+## Regras do sistema
+
+- Propostas e materiais comerciais salvar em `saidas/`
+- Identidade visual (cores, logo) sempre consultada de `identidade/design-guide.md`
+
+## Ferramentas conectadas
+
+- [ ] Notion
+- [ ] Gmail
+- [ ] Google Calendar
+- [ ] Google Ads
+- [ ] Meta Ads
+- [ ] Slack
+
+*(Marcar conforme for instalando os MCPs)*
 
 ---
 
