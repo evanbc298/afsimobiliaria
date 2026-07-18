@@ -69,6 +69,8 @@ const organizationJsonLd = {
   ],
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Rua 3.500, nº 97",
+    addressLocality: "Balneário Camboriú",
     addressRegion: "SC",
     addressCountry: "BR",
   },

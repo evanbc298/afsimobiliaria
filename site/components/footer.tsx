@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export function Footer() {
@@ -6,14 +7,16 @@ export function Footer() {
     <footer className="bg-afs-navy px-4 py-12 text-afs-cream/80 sm:px-6">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-3">
         <div>
-          <p className="text-lg font-bold text-afs-cream">
+          <p className="flex items-center gap-2 text-lg font-bold text-afs-cream">
+            <Image src="/icon-mark-light.png" alt="" width={28} height={28} className="h-7 w-7" />
             AFS <span className="text-afs-gold">Imobiliária</span>
           </p>
           <p className="mt-3 text-sm">
             Assessoria imobiliária completa em Itajaí e Balneário Camboriú, do início do
             processo até a entrega das chaves.
           </p>
-          <p className="mt-3 text-sm">CRECI 31495</p>
+          <p className="mt-3 text-sm">Rua 3.500, nº 97 — Centro, Balneário Camboriú/SC</p>
+          <p className="mt-1 text-sm">CRECI 31495</p>
         </div>
         <div>
           <p className="text-sm font-semibold uppercase tracking-wide text-afs-gold">Navegação</p>

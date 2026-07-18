@@ -25,7 +25,7 @@ export function WhatsappFloat() {
             <div className="flex items-center gap-3">
               <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full bg-afs-cream">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logo.png" alt="AFS Imobiliária" className="h-full w-full object-contain p-1" />
+                <img src="/icon-mark.png" alt="AFS Imobiliária" className="h-full w-full object-contain p-1.5" />
                 <span className="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full border-2 border-afs-navy bg-[#25D366]" />
               </div>
               <div>
@@ -67,7 +67,7 @@ export function WhatsappFloat() {
         className="relative flex h-14 w-14 items-center justify-center rounded-full bg-afs-navy shadow-lg transition-transform hover:scale-105"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo.png" alt="" className="h-9 w-9 object-contain" />
+        <img src="/icon-mark-light.png" alt="" className="h-9 w-9 object-contain" />
         <span className="absolute -right-0.5 -top-0.5 h-4 w-4 rounded-full border-2 border-white bg-[#25D366]" />
       </button>
     </div>
