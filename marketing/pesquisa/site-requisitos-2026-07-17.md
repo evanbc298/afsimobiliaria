@@ -7,12 +7,42 @@
 
 ## Pendências antes de começar o build
 
-- [ ] Mínimo de 20 imóveis (fotos + dados) — a receber
-- [ ] Site de referência visual (link que o usuário vai mandar)
+- [x] Mínimo de 20 imóveis (fotos + dados) — recebido em
+  `site-imobiliario-especificacao-completa-2026-07-17.md`
+- [x] Site de referência visual — recebido: imobillenegocios.com.br
 
-Sem isso o site não começa a ser construído — o resto deste documento é
-preparação, pra quando os dois itens chegarem a gente já saber exatamente o
-que construir.
+As duas pendências que travavam o início do build foram resolvidas.
+
+## Site de referência: imobillenegocios.com.br
+
+**Atenção:** essa é a Imobille, uma das três imobiliárias líderes de BC
+analisadas no `plano-ataque-digital-bc-2026-07-17.md` — justamente a que
+tem "site sofisticado, marca institucional" como força e "sem inglês, sem
+calculadoras, sem tour virtual, sem dashboard" como fraqueza. Serve como
+referência de **estrutura e sofisticação visual**, não de features — as
+brechas que ela não cobre continuam sendo o diferencial da AFS.
+
+**O que copiar da estrutura:**
+- Hero com imagem grande + tagline forte (equivalente da AFS: algo em torno
+  de "a imobiliária pra confiar")
+- Filtros de busca logo abaixo do hero (localização, tipo, faixa de preço)
+- Carrossel de imóveis em alta demanda
+- Seção separada por características (na planta, frente-mar, etc. — pro
+  portfólio da AFS isso mapeia pros 3 tiers do documento técnico)
+- Cards de imóvel com foto, metragem, vagas, quartos, preço, badge de
+  oportunidade
+- Seção de formulário "quero anunciar meu imóvel"
+- Feed do Instagram embedado
+- Footer com descrição da empresa, horário, endereços, CRECI, contatos
+
+**O que NÃO copiar (é exatamente a lacuna que a AFS ocupa):** ausência de
+versão em inglês, ausência de calculadoras, ausência de tour virtual,
+ausência de dashboard de mercado. A estrutura visual pode inspirar; os
+recursos que faltam nela são o motivo do site da AFS existir.
+
+**Paleta:** Imobille usa azul-oceano + branco. A AFS usa navy + laranja/
+dourado + creme (`identidade/design-guide.md`) — manter a identidade
+própria, não a da referência.
 
 ## Objetivo de posicionamento
 
@@ -61,8 +91,7 @@ R$ 800-2.000/mês de manutenção.
 
 ## Como isso se conecta com o resto do MazyOS
 
-- Fotos e descrições dos 20 imóveis, quando chegarem, alimentam o site E
-  servem de base pra primeiras postagens semanais (`/carrossel`,
-  `/publicar-tema`)
-- O site de referência que o usuário vai mandar define o tom visual — cruzar
-  com `identidade/design-guide.md` antes de aplicar
+- Fotos e descrições dos 20 imóveis alimentam o site E servem de base pra
+  primeiras postagens semanais (`/carrossel`, `/publicar-tema`)
+- Site de referência cruzado com `identidade/design-guide.md` — estrutura da
+  Imobille, cores e identidade da AFS

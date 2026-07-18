@@ -52,5 +52,27 @@ valem como prioridade real, não só referência.
 **Site institucional:** essa pesquisa foi o motivo de mandar o plano — vai
 virar o site da AFS. Briefing derivado em
 `marketing/pesquisa/site-requisitos-2026-07-17.md`, com requisitos
-obrigatórios e desejáveis. Bloqueado até o usuário enviar (1) mínimo de 20
-imóveis e (2) um site de referência visual.
+obrigatórios e desejáveis.
+
+**Especificação técnica completa recebida (2026-07-17):**
+`marketing/pesquisa/site-imobiliario-especificacao-completa-2026-07-17.md` —
+documento denso (stack Next.js + shadcn/ui, mapa de 22 páginas, os 20
+empreendimentos que a AFS vende com copy/preço/verba de tráfego por tier,
+plano de 90 dias, projeção de ROI). Confirmado com o usuário: os 20
+empreendimentos são reais (AFS representa/vende), e esse documento
+**complementa** (não substitui) o `site-requisitos-2026-07-17.md` — usar os
+dois juntos quando o build começar.
+
+**Correções a aplicar quando o build começar** (o documento tem placeholders
+genéricos que não são da AFS):
+- Paleta de cores do código é genérica (`brand` ciano + `gold`) — substituir
+  pela identidade real da AFS (`identidade/design-guide.md`: navy `#172938`
+  + laranja `#E19E4D` + creme `#F9F8F3`)
+- Nome do site é placeholder (`SeuSiteImobiliario.com.br`) — trocar pelo
+  domínio real da AFS quando definido
+- Documento cobre Itajaí + BC — confirmar se a AFS atua nas duas cidades ou
+  só em BC antes de construir as páginas de Itajaí
+
+**Ainda pendente:** site de referência visual (link que o usuário disse que
+ia mandar) — os 20 imóveis já chegaram via este documento, isso resolve
+essa parte do que estava bloqueando o projeto do site.
