@@ -150,9 +150,27 @@ guardado em `lib/whatsapp.ts` como `SUPPORT_WHATSAPP_NUMBER`. Os outros
 botões do site (navbar, footer, contato, páginas de imóvel) continuam
 com o número original (`47 99695-8399`).
 
+**Comparativo AFS vs Imobille (2026-07-18):** usuário pediu análise profunda
+do concorrente Imobille pra extrair o que eles fazem melhor. Documento
+completo em `marketing/pesquisa/comparativo-afs-vs-imobille-2026-07-18.md`.
+Resumo: eles têm blog completo (AFS não tem — maior gap), busca/filtro
+interativo na home (AFS não tem), seção "na planta" curada. AFS já tem
+vantagem real em SEO técnico: dados estruturados JSON-LD que a Imobille
+não tem nenhum. Corrigido de imediato: robots.txt agora libera
+explicitamente crawlers de IA (GPTBot, Claude-Web, PerplexityBot etc.),
+prática que a Imobille já fazia e a AFS não fazia. Aguardando decisão do
+usuário sobre prioridade entre construir o filtro de busca vs o blog
+institucional (blog precisa de fonte de conteúdo definida).
+
+**Fotos da cidade:** usuário disse que vai mandar fotos bonitas de
+Balneário Camboriú pra usar no site (provavelmente pra hero/seções de
+cidade) — ainda não chegaram.
+
 **Pendências ativas:**
 - DNS propagar + marcar "Enforce HTTPS" no GitHub Pages (só aguardar)
+- Decisão: filtro de busca interativo vs blog institucional (qual primeiro)
 - Dados dos 7 empreendimentos não confirmados (verificar no DWV App)
 - Preço/tipologia do Onne Home, se for cadastrar
 - Fotos oficiais sem marca d'água (antes de campanha paga de verdade)
 - Avatar do widget de chat é a logo por enquanto — trocar por foto real quando tiver
+- Fotos da cidade (Balneário Camboriú) que o usuário vai mandar
