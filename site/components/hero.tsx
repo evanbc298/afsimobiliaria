@@ -45,7 +45,7 @@ export function Hero() {
           A imobiliária pra confiar na compra e venda do seu imóvel
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-afs-cream/80">
-          Assessoria completa, do início às chaves. 26 empreendimentos selecionados
+          Assessoria completa, do início às chaves. 27 empreendimentos selecionados
           no litoral de Santa Catarina, de R$ 250 mil a R$ 50 milhões.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

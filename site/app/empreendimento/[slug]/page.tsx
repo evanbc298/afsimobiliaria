@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { MapPin, Ruler, Building2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ContactForm } from "@/components/contact-form";
+import { FinancingSimulator } from "@/components/financing-simulator";
 import { PropertyGallery } from "@/components/property-gallery";
 import { JsonLd } from "@/components/json-ld";
 import { properties, getPropertyBySlug } from "@/lib/data/properties";
@@ -143,6 +144,8 @@ export default async function PropertyPage({
               Falar direto no WhatsApp
             </a>
           </Button>
+
+          <FinancingSimulator priceMin={property.priceMin} propertyName={property.name} />
         </div>
       </div>
     </div>

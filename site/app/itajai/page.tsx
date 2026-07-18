@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PropertyGrid } from "@/components/property-grid";
+import { PropertyFilterGrid } from "@/components/property-filter-grid";
 import { getPropertiesByCity } from "@/lib/data/properties";
 
 const title = "Apartamentos em Itajaí — Empreendimentos Selecionados";
@@ -28,7 +28,7 @@ export default function ItajaiPage() {
           empreendimentos selecionados pela AFS, de entrada acessível a alto padrão.
         </p>
       </div>
-      <PropertyGrid properties={propertiesItajai} />
+      <PropertyFilterGrid properties={propertiesItajai} />
     </div>
   );
 }

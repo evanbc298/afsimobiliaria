@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | AFS Imobiliária",
   },
   description:
-    "Assessoria imobiliária completa em Itajaí, Balneário Camboriú e Itapema, do início do processo até a entrega das chaves. 26 empreendimentos selecionados, de R$ 250 mil a R$ 50 milhões.",
+    "Assessoria imobiliária completa em Itajaí, Balneário Camboriú e Itapema, do início do processo até a entrega das chaves. 27 empreendimentos selecionados, de R$ 250 mil a R$ 50 milhões.",
   keywords: [
     "imobiliária Itajaí",
     "imobiliária Balneário Camboriú",

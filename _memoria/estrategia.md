@@ -201,13 +201,105 @@ algo melhor, não vamos copiar". Implementado:
   como a Imobille usa — mantendo a frase-chave "do início às chaves".
 Build e QA visual (desktop 1440px) confirmados. Commit pendente de push.
 
+**Endereço + contraste da logo (2026-07-18):** endereço físico (Rua 3.500, nº
+97, Centro, Balneário Camboriú) adicionado no rodapé e no JSON-LD
+(RealEstateAgent) pra reforçar SEO local. Criada variante clara do ícone da
+marca (`icon-mark-light.png`) pra usar sobre fundos escuros — a versão navy
+ficava quase invisível no botão do widget de WhatsApp e no rodapé.
+
+**Expansão pra Itapema + atualização de 4 empreendimentos (2026-07-18):**
+usuário mandou 10 links de hotsite DWV (formato `hotsite.dwvapp.com.br/...`).
+Descoberto que esses hotsites carregam um JSON completo (`__NEXT_DATA__`) via
+`curl` direto — muito mais confiável que scraping visual, dá endereço exato,
+diferenciais, % de obra, data de entrega e URLs das fotos em alta resolução.
+Cruzado com busca na web pra pegar preço e nome da construtora (a DWV nunca
+expõe preço na página).
+
+- **4 novos empreendimentos em Itapema:** Al Mare Residence (Pasqualotto,
+  frente-mar Centro, a partir de R$3,49M), L'Atelier Concept Homes (Embraed,
+  Meia Praia, a partir de R$4,97M), Sunny Coast (J.A. Russi, frente-mar
+  Centro, sem preço confirmado) e Saint John (J.A. Russi, Centro, sem preço
+  confirmado). Site ganhou página própria `/itapema` (mesmo padrão de
+  `/itajai` e `/balneario-camboriu`), com link no menu, rodapé, sitemap e
+  `areaServed` no JSON-LD.
+- **2 novos em Balneário Camboriú:** Sapphire Tower (FG Empreendimentos,
+  Centro, <200m da praia — **não é frente-mar**, corrigido do que o usuário
+  achava) e Garden Park Home Club (FG Empreendimentos, Pioneiros, ~600m do
+  mar — **também não é frente-mar**, é um Home Club mais afastado da praia).
+  Vale avisar o usuário dessa correção se ele for usar esse discurso em
+  anúncio.
+- **4 empreendimentos existentes atualizados** com dados reais (antes eram
+  estimativas): Lago di San Pellegrino (preço refinado pra R$510K-750K),
+  Upper Smart Home (preço corrigido de R$250K pra R$400K de entrada — a
+  estimativa antiga estava errada), Space Soul (**status mudou de
+  "Lançamento" pra "Pronto"** — já foi entregue em 10/2024 — e preço
+  corrigido pra R$1,435M de entrada) e Reserva Recife (sem preço — usuário
+  pediu explicitamente pra deixar "Consulte-nos" em vez de estimar).
+- **Convenção nova criada:** `priceMin: 0` em `properties.ts` significa
+  "sem preço confirmado" — a UI mostra "Consulte-nos" no lugar de "A partir
+  de R$...", e o JSON-LD omite o bloco de `offers` nesse caso (evita declarar
+  preço fictício pra buscadores). Usada em Sunny Coast, Saint John, Sapphire
+  Tower, Garden Park Home Club e Reserva Recife — 5 empreendimentos ainda
+  precisam de preço real do usuário/corretor.
+- Total no site: 26 empreendimentos (era 20). Contagem atualizada em todo
+  lugar que citava "20" (hero, stats bar, meta description, títulos SEO).
+  Cópia do site trocada de "Itajaí e Balneário Camboriú" pra "Itajaí,
+  Balneário Camboriú e Itapema" onde fazia sentido (hero, footer, layout,
+  contato) — textos do blog ficaram como estão, já que os posts publicados
+  são especificamente sobre Itajaí/BC.
+- Instagram (`instagram.com/afsimobiliaria`) adicionado no rodapé.
+
 **Pendências ativas:**
-- Filtro de busca interativo na home (deprioritizado atrás do blog, ainda no radar)
-- Dados dos 7 empreendimentos não confirmados (verificar no DWV App)
+- Preço real de 5 empreendimentos ("Consulte-nos"): Sunny Coast, Saint John,
+  Sapphire Tower, Garden Park Home Club, Reserva Recife
+**Filtro de busca interativo + simulador de financiamento (2026-07-18):**
+usuário aprovou os dois quando eu perguntei "o que falta no site". Implementados:
+- `components/property-filter-grid.tsx` — filtro por condição (Lançamento/Em
+  Construção/Pronto/Últimas Unidades), faixa de preço e ordenação (menor
+  preço/maior preço/nome), com contador ao vivo. Substituiu o `PropertyGrid`
+  estático nas páginas `/itajai`, `/balneario-camboriu` e `/itapema`.
+- `components/financing-simulator.tsx` — simulação PRICE (parcela fixa) com
+  slider de valor, botões de entrada (10/20/30/40%) e prazo (5 a 30 anos),
+  taxa referencial de 10,5% a.a. fixa no código (deixar claro pro usuário que
+  é estimativa, não oferta de crédito real). Aparece na página de cada
+  empreendimento, abaixo do formulário de contato. Quando o imóvel não tem
+  preço (`priceMin === 0`), mostra mensagem pra falar com a gente em vez do
+  simulador.
+- Os 3 empreendimentos que ainda restavam sem dados confirmados (Essência
+  Residence, Atmosphere Spa Home Club, Viva 360) — usuário não encontrou as
+  informações, então ficaram com preço "Consulte-nos" (mesma convenção
+  `priceMin: 0`) em vez de estimativa. Não são mais "pendência de dados", é
+  decisão definitiva por enquanto.
+
+**Imóvel exclusivo do cliente direto — Alameda Jardins (2026-07-18):**
+usuário mandou pasta com documento de texto + 71 fotos + 3 vídeos (WhatsApp)
+de um apartamento específico que um cliente (não construtora) quer vender
+através da AFS — diferente dos outros itens do catálogo, que são unidades de
+empreendimentos em lançamento/construção vendidas em nome da construtora.
+Cadastrado como imóvel #27: **Alameda Jardins**, Barra Norte de Balneário
+Camboriú, prédio da FG Empreendimentos, 3 suítes + 2 vagas, 117m² privativos,
+totalmente mobiliado, vista mar, R$ 2.700.000 (aceita carro ou outro imóvel
+na negociação, parcelamento direto com o proprietário — dono já documentou
+tudo, escritura ok). 26 fotos selecionadas (18 do apartamento + 8 dos
+diferenciais do condomínio) de um total de 71 recebidas, otimizadas e no ar
+em `/empreendimento/apartamento-alameda-jardins`.
+**Pendente:** os 3 vídeos recebidos ainda não foram usados — avaliar se vale
+subir pro site ou usar direto nos criativos de Meta Ads. A pasta original
+`IMOVEL SADI/` na raiz do repo local (com o .txt, a foto solta e os 2 .zip)
+não foi commitada — fica só local, não sobe pro GitHub.
+**Ainda pendente do pedido original:** os 3 modelos de criativo com copy pro
+Meta Ads sobre esse imóvel — ainda não comecei.
+
+**Pendências ativas:**
+- 3 modelos de criativo (copy) pro Meta Ads sobre o Alameda Jardins — pedido
+  original do usuário, ainda não executado
+- Meta Pixel / Google Analytics — perguntei ao usuário se quer que eu instale
+  antes de rodar tráfego pago; still aguardando os IDs (Pixel ID do Business
+  Manager / Measurement ID do GA4) pra poder configurar de verdade
+- Preço real de 5 empreendimentos ("Consulte-nos"): Sunny Coast, Saint John,
+  Sapphire Tower, Garden Park Home Club, Reserva Recife
 - Preço/tipologia do Onne Home, se for cadastrar
 - Fotos oficiais sem marca d'água (antes de campanha paga de verdade)
 - Avatar do widget de chat é a logo por enquanto — trocar por foto real quando tiver
 - Mais fotos de bairros/empreendimentos específicos pro blog, se usuário quiser expandir
-- Novo imóvel que o cliente enviou (fotos + informações) — usuário avisou que ia
-  subir mas ainda não mandou o material; aguardando pra cadastrar e criar os
-  criativos de tráfego pro Meta Ads
+- 3 vídeos do Alameda Jardins — decidir se sobem pro site ou viram material de anúncio

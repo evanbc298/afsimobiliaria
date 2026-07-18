@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PropertyGrid } from "@/components/property-grid";
+import { PropertyFilterGrid } from "@/components/property-filter-grid";
 import { getPropertiesByCity } from "@/lib/data/properties";
 
 const title = "Apartamentos em Itapema — Empreendimentos Selecionados";
@@ -29,7 +29,7 @@ export default function ItapemaPage() {
           pela AFS.
         </p>
       </div>
-      <PropertyGrid properties={propertiesItapema} />
+      <PropertyFilterGrid properties={propertiesItapema} />
     </div>
   );
 }
