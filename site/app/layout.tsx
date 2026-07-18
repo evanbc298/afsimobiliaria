@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { WhatsappFloat } from "@/components/whatsapp-float";
 import { JsonLd } from "@/components/json-ld";
+import { Analytics } from "@/components/analytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -88,6 +89,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-afs-cream">
+        <Analytics />
         <JsonLd data={organizationJsonLd} />
         <Navbar />
         <main className="flex-1">{children}</main>
