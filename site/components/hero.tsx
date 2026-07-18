@@ -39,13 +39,13 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-4xl text-center">
         <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-afs-gold">
-          Itajaí &amp; Balneário Camboriú
+          Itajaí &middot; Balneário Camboriú &middot; Itapema
         </p>
         <h1 className="text-4xl font-bold leading-tight sm:text-6xl">
           A imobiliária pra confiar na compra e venda do seu imóvel
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-afs-cream/80">
-          Assessoria completa, do início às chaves. 20 empreendimentos selecionados
+          Assessoria completa, do início às chaves. 26 empreendimentos selecionados
           no litoral de Santa Catarina, de R$ 250 mil a R$ 50 milhões.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

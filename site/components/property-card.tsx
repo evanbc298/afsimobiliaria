@@ -32,7 +32,9 @@ export function PropertyCard({ property }: { property: Property }) {
         <p className="mt-3 text-sm text-afs-navy/70">
           {property.typology} · {property.area}
         </p>
-        <p className="mt-3 text-base font-semibold text-afs-navy">A partir de R$ {property.priceMin.toLocaleString("pt-BR")}</p>
+        <p className="mt-3 text-base font-semibold text-afs-navy">
+          {property.priceMin > 0 ? `A partir de R$ ${property.priceMin.toLocaleString("pt-BR")}` : "Consulte-nos"}
+        </p>
       </div>
     </Link>
   );

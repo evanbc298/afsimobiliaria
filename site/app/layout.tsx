@@ -20,11 +20,11 @@ const SITE_URL = "https://afsimobiliaria.com.br";
 
 export const metadata: Metadata = {
   title: {
-    default: "AFS Imobiliária — Imóveis em Itajaí e Balneário Camboriú",
+    default: "AFS Imobiliária — Imóveis em Itajaí, Balneário Camboriú e Itapema",
     template: "%s | AFS Imobiliária",
   },
   description:
-    "Assessoria imobiliária completa em Itajaí e Balneário Camboriú, do início do processo até a entrega das chaves. 20 empreendimentos selecionados, de R$ 250 mil a R$ 50 milhões.",
+    "Assessoria imobiliária completa em Itajaí, Balneário Camboriú e Itapema, do início do processo até a entrega das chaves. 26 empreendimentos selecionados, de R$ 250 mil a R$ 50 milhões.",
   keywords: [
     "imobiliária Itajaí",
     "imobiliária Balneário Camboriú",
@@ -41,16 +41,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     siteName: "AFS Imobiliária",
-    title: "AFS Imobiliária — Imóveis em Itajaí e Balneário Camboriú",
+    title: "AFS Imobiliária — Imóveis em Itajaí, Balneário Camboriú e Itapema",
     description:
-      "Assessoria imobiliária completa em Itajaí e Balneário Camboriú, do início do processo até a entrega das chaves.",
+      "Assessoria imobiliária completa em Itajaí, Balneário Camboriú e Itapema, do início do processo até a entrega das chaves.",
     images: [{ url: "/logo-og.png", width: 1408, height: 768, alt: "AFS Imobiliária" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AFS Imobiliária — Imóveis em Itajaí e Balneário Camboriú",
+    title: "AFS Imobiliária — Imóveis em Itajaí, Balneário Camboriú e Itapema",
     description:
-      "Assessoria imobiliária completa em Itajaí e Balneário Camboriú, do início do processo até a entrega das chaves.",
+      "Assessoria imobiliária completa em Itajaí, Balneário Camboriú e Itapema, do início do processo até a entrega das chaves.",
     images: ["/logo-og.png"],
   },
 };
@@ -66,6 +66,7 @@ const organizationJsonLd = {
   areaServed: [
     { "@type": "City", name: "Itajaí" },
     { "@type": "City", name: "Balneário Camboriú" },
+    { "@type": "City", name: "Itapema" },
   ],
   address: {
     "@type": "PostalAddress",

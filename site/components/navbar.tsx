@@ -10,6 +10,7 @@ import { whatsappLink } from "@/lib/whatsapp";
 const links = [
   { href: "/itajai", label: "Itajaí" },
   { href: "/balneario-camboriu", label: "Balneário Camboriú" },
+  { href: "/itapema", label: "Itapema" },
   { href: "/blog", label: "Blog" },
   { href: "/contato", label: "Contato" },
 ];

@@ -4,7 +4,7 @@ export interface Property {
   name: string;
   developer: string;
   location: string;
-  city: "Itajaí" | "Balneário Camboriú";
+  city: "Itajaí" | "Balneário Camboriú" | "Itapema";
   neighborhood: string;
   typology: string;
   area: string;
@@ -23,7 +23,7 @@ export interface Neighborhood {
   id: string;
   slug: string;
   name: string;
-  city: "Itajaí" | "Balneário Camboriú";
+  city: "Itajaí" | "Balneário Camboriú" | "Itapema";
   description: string;
   pricePerSqm: number;
   highlights: string[];

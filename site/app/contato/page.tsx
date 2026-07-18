@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const title = "Fale Conosco — Agende sua Visita";
 const description =
-  "Entre em contato para agendar uma visita virtual ou presencial. Atendimento em Itajaí e Balneário Camboriú.";
+  "Entre em contato para agendar uma visita virtual ou presencial. Atendimento em Itajaí, Balneário Camboriú e Itapema.";
 
 export const metadata: Metadata = {
   title,

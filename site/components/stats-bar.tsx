@@ -1,7 +1,7 @@
 const stats = [
   { value: "R$ 13,47B", label: "VGV litoral norte de SC (2025)" },
   { value: "46%", label: "Crescimento de Itajaí em 3 anos" },
-  { value: "20", label: "Empreendimentos selecionados" },
+  { value: "26", label: "Empreendimentos selecionados" },
   { value: "10+", label: "Construtoras parceiras" },
 ];
 

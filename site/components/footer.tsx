@@ -2,6 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { whatsappLink } from "@/lib/whatsapp";
 
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
+
 export function Footer() {
   return (
     <footer className="bg-afs-navy px-4 py-12 text-afs-cream/80 sm:px-6">
@@ -12,8 +22,8 @@ export function Footer() {
             AFS <span className="text-afs-gold">Imobiliária</span>
           </p>
           <p className="mt-3 text-sm">
-            Assessoria imobiliária completa em Itajaí e Balneário Camboriú, do início do
-            processo até a entrega das chaves.
+            Assessoria imobiliária completa em Itajaí, Balneário Camboriú e Itapema, do início
+            do processo até a entrega das chaves.
           </p>
           <p className="mt-3 text-sm">Rua 3.500, nº 97 — Centro, Balneário Camboriú/SC</p>
           <p className="mt-1 text-sm">CRECI 31495</p>
@@ -26,6 +36,9 @@ export function Footer() {
             </li>
             <li>
               <Link href="/balneario-camboriu">Balneário Camboriú</Link>
+            </li>
+            <li>
+              <Link href="/itapema">Itapema</Link>
             </li>
             <li>
               <Link href="/blog">Blog</Link>
@@ -43,7 +56,18 @@ export function Footer() {
                 WhatsApp
               </a>
             </li>
-            <li>Itajaí / Balneário Camboriú — SC</li>
+            <li>
+              <a
+                href="https://www.instagram.com/afsimobiliaria/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5"
+              >
+                <InstagramIcon />
+                Instagram
+              </a>
+            </li>
+            <li>Itajaí / Balneário Camboriú / Itapema — SC</li>
           </ul>
         </div>
       </div>

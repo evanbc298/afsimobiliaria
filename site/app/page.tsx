@@ -28,7 +28,7 @@ export default function Home() {
 
       <PropertyCarousel
         title="Alto padrão, alta margem"
-        subtitle="Empreendimentos com diferenciais reais e potencial de valorização."
+        subtitle="Empreendimentos com diferenciais reais e potencial de valorização, de Itajaí a Itapema."
         properties={tier2}
       />
 
@@ -36,7 +36,7 @@ export default function Home() {
 
       <PropertyCarousel
         title="Litoral de luxo absoluto"
-        subtitle="Barra Sul e Centro de Balneário Camboriú — o topo do mercado catarinense."
+        subtitle="Barra Sul, Centro de Balneário Camboriú e Itapema — o topo do mercado catarinense."
         properties={tier3}
       />
 
@@ -47,6 +47,9 @@ export default function Home() {
           </Button>
           <Button asChild variant="outline" className="border-afs-navy text-afs-navy hover:bg-afs-navy hover:text-afs-cream">
             <Link href="/balneario-camboriu">Ver Balneário Camboriú</Link>
+          </Button>
+          <Button asChild variant="outline" className="border-afs-navy text-afs-navy hover:bg-afs-navy hover:text-afs-cream">
+            <Link href="/itapema">Ver Itapema</Link>
           </Button>
         </div>
       </section>

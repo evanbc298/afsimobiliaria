@@ -44,7 +44,7 @@ export function PropertyCarouselCard({ property }: { property: Property }) {
           {property.typology} · {property.area}
         </p>
         <p className="mt-3 text-base font-semibold text-afs-navy">
-          A partir de R$ {property.priceMin.toLocaleString("pt-BR")}
+          {property.priceMin > 0 ? `A partir de R$ ${property.priceMin.toLocaleString("pt-BR")}` : "Consulte-nos"}
         </p>
       </div>
     </Link>

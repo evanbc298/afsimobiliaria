@@ -25,7 +25,8 @@ export async function generateMetadata({
   if (!property) return {};
 
   const title = `${property.name} — ${property.neighborhood}`;
-  const description = `${property.name} em ${property.location}. ${property.typology} de ${property.area} a partir de ${property.priceDisplay}. ${property.differentials[0]}.`;
+  const priceText = property.priceMin > 0 ? `a partir de ${property.priceDisplay}` : "sob consulta";
+  const description = `${property.name} em ${property.location}. ${property.typology} de ${property.area}, ${priceText}. ${property.differentials[0]}.`;
 
   return {
     title,
@@ -67,16 +68,18 @@ export default async function PropertyPage({
       addressRegion: "SC",
       addressCountry: "BR",
     },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "BRL",
-      priceSpecification: {
-        "@type": "PriceSpecification",
-        minPrice: property.priceMin,
-        maxPrice: property.priceMax,
+    ...(property.priceMin > 0 && {
+      offers: {
+        "@type": "Offer",
         priceCurrency: "BRL",
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          minPrice: property.priceMin,
+          maxPrice: property.priceMax,
+          priceCurrency: "BRL",
+        },
       },
-    },
+    }),
   };
 
   return (
@@ -123,7 +126,9 @@ export default async function PropertyPage({
         </div>
 
         <div className="lg:sticky lg:top-24 lg:h-fit">
-          <p className="mb-4 text-2xl font-bold text-afs-navy">A partir de R$ {property.priceMin.toLocaleString("pt-BR")}</p>
+          <p className="mb-4 text-2xl font-bold text-afs-navy">
+            {property.priceMin > 0 ? `A partir de R$ ${property.priceMin.toLocaleString("pt-BR")}` : "Consulte-nos"}
+          </p>
           <ContactForm propertyName={property.name} />
           <Button
             asChild
