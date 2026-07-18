@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -19,7 +20,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-afs-navy/10 bg-afs-cream/95 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <Link href="/" className="text-lg font-bold tracking-tight text-afs-navy">
+        <Link href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight text-afs-navy">
+          <Image src="/icon-mark.png" alt="" width={36} height={36} className="h-9 w-9" priority />
           AFS <span className="text-afs-gold">Imobiliária</span>
         </Link>
 

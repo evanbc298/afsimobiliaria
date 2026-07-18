@@ -162,15 +162,52 @@ prática que a Imobille já fazia e a AFS não fazia. Aguardando decisão do
 usuário sobre prioridade entre construir o filtro de busca vs o blog
 institucional (blog precisa de fonte de conteúdo definida).
 
-**Fotos da cidade:** usuário disse que vai mandar fotos bonitas de
-Balneário Camboriú pra usar no site (provavelmente pra hero/seções de
-cidade) — ainda não chegaram.
+**Fotos da cidade:** resolvido — 8 fotos reais de Balneário Camboriú/Itajaí
+buscadas no Wikimedia Commons (licença livre, com atribuição registrada em
+`site/public/images/blog/cidade/_creditos.txt`), usadas no blog. Usuário
+pode mandar fotos próprias depois pra complementar.
+
+**Blog institucional lançado (2026-07-18):** usuário escolheu blog como
+prioridade sobre o filtro de busca interativo. 6 artigos publicados em
+`site/lib/data/blog-posts.ts`, cobrindo investimento (valorização BC,
+Airbnb), guias práticos (ITBI, planta vs pronto) e lifestyle/bairros
+(Praia Brava, o que fazer em BC) — conteúdo com dados reais já levantados
+na pesquisa de mercado. Páginas: listagem com destaque + filtro por
+categoria (`/blog`) e detalhe de post com JSON-LD BlogPosting, related
+posts e CTA de WhatsApp (`/blog/[slug]`). Link adicionado no menu e
+rodapé. Sitemap atualizado com as 6 URLs de post + `/blog/`. Build e QA
+visual (screenshot) confirmados sem erros. Commit `a168bab` já no
+GitHub, deploy automático deve publicar em minutos.
+
+**Domínio no ar com HTTPS (2026-07-18):** DNS propagou, GitHub Pages
+confirmou "DNS check successful" e "Enforce HTTPS" foi marcado com
+sucesso. `https://afsimobiliaria.com.br/` está no ar e seguro. Infra do
+site (domínio, deploy automático, SEO, HTTPS) está completa.
+
+**Redesign da home inspirado na Imobille (2026-07-18):** usuário mandou prints
+do site da Imobille pedindo algo parecido, mas deixou explícito "inove, faça
+algo melhor, não vamos copiar". Implementado:
+- Logo (ícone extraído do arquivo oficial) na navbar + favicon/app-icon
+  gerados a partir dele (`site/public/icon-mark.png`, `site/app/favicon.ico`,
+  `site/app/icon.png`, `site/app/apple-icon.png`).
+- 3 carrosséis de imóveis na home (`components/property-carousel.tsx`),
+  organizados pelos 3 tiers já existentes no modelo de dados — não pelas
+  categorias da Imobille ("na planta"/"frente mar") — com selos coloridos
+  de status (Lançamento âmbar, Em Construção azul, Pronto verde) e bairro.
+  Só entram imóveis com fotos reais (evita placeholder "foto em breve" no
+  destaque da home).
+- Seção de CTA dupla (proprietário / investidor) com conceito próprio —
+  cards com ícone e gradiente na paleta AFS, não fotos de banco de imagem
+  como a Imobille usa — mantendo a frase-chave "do início às chaves".
+Build e QA visual (desktop 1440px) confirmados. Commit pendente de push.
 
 **Pendências ativas:**
-- DNS propagar + marcar "Enforce HTTPS" no GitHub Pages (só aguardar)
-- Decisão: filtro de busca interativo vs blog institucional (qual primeiro)
+- Filtro de busca interativo na home (deprioritizado atrás do blog, ainda no radar)
 - Dados dos 7 empreendimentos não confirmados (verificar no DWV App)
 - Preço/tipologia do Onne Home, se for cadastrar
 - Fotos oficiais sem marca d'água (antes de campanha paga de verdade)
 - Avatar do widget de chat é a logo por enquanto — trocar por foto real quando tiver
-- Fotos da cidade (Balneário Camboriú) que o usuário vai mandar
+- Mais fotos de bairros/empreendimentos específicos pro blog, se usuário quiser expandir
+- Novo imóvel que o cliente enviou (fotos + informações) — usuário avisou que ia
+  subir mas ainda não mandou o material; aguardando pra cadastrar e criar os
+  criativos de tráfego pro Meta Ads
