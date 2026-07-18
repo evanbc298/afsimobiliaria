@@ -133,8 +133,26 @@ localizados (não baixados, ficam linkados direto do CDN quando cadastrar).
 preço indisponível no momento; usuário decidiu focar nos 20 confirmados
 primeiro e deixar o Onne Home em espera).
 
+**DNS configurado (2026-07-18):** usuário conseguiu acesso ao Registro.br e
+configurou os 4 registros A (185.199.108/109/110/111.153) + CNAME www →
+evanbc298.github.io. GitHub Pages já confirma o domínio (redireciona
+github.io → afsimobiliaria.com.br) — só falta a propagação do DNS (pode
+levar minutos a horas) e depois marcar "Enforce HTTPS" nas configurações
+do Pages. Deploy automático via Actions já está funcionando normalmente
+(rodou com sucesso nos últimos pushes).
+
+**Widget de chat 24h (2026-07-18):** botão flutuante do WhatsApp virou um
+widget completo — avatar (logo da AFS, provisório), indicador online,
+card de saudação que abre sozinho ~2,5s depois de carregar a página,
+mensagem "Atendimento 24 horas" + botão pro WhatsApp. Usa um número
+**diferente** do resto do site: `47 99999-5003` (linha de atendimento),
+guardado em `lib/whatsapp.ts` como `SUPPORT_WHATSAPP_NUMBER`. Os outros
+botões do site (navbar, footer, contato, páginas de imóvel) continuam
+com o número original (`47 99695-8399`).
+
 **Pendências ativas:**
+- DNS propagar + marcar "Enforce HTTPS" no GitHub Pages (só aguardar)
 - Dados dos 7 empreendimentos não confirmados (verificar no DWV App)
 - Preço/tipologia do Onne Home, se for cadastrar
 - Fotos oficiais sem marca d'água (antes de campanha paga de verdade)
-- DNS do domínio — depende do cliente dele liberar acesso ao Registro.br
+- Avatar do widget de chat é a logo por enquanto — trocar por foto real quando tiver
