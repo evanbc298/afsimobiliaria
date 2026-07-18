@@ -29,6 +29,26 @@ export interface Neighborhood {
   highlights: string[];
 }
 
+export interface BlogSection {
+  heading?: string;
+  body: string[];
+}
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: "Investimento" | "Guia Prático" | "Bairros" | "Lifestyle";
+  city: "Balneário Camboriú" | "Itajaí" | "Itajaí e Balneário Camboriú";
+  image: string;
+  imageCredit: string;
+  date: string;
+  readingTime: number;
+  sections: BlogSection[];
+  seoDescription: string;
+  keywords: string[];
+}
+
 export interface Lead {
   name: string;
   email: string;

@@ -25,6 +25,9 @@ export function Footer() {
               <Link href="/balneario-camboriu">Balneário Camboriú</Link>
             </li>
             <li>
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li>
               <Link href="/contato">Contato</Link>
             </li>
           </ul>
