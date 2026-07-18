@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import { PropertyGrid } from "@/components/property-grid";
 import { getPropertiesByCity } from "@/lib/data/properties";
 
+const title = "Apartamentos em Itajaí — Empreendimentos Selecionados";
+const description =
+  "Os melhores empreendimentos de Itajaí, do centro à Praia Brava. Apartamentos de R$ 350 mil a R$ 5 milhões.";
+
 export const metadata: Metadata = {
-  title: "Apartamentos em Itajaí — Empreendimentos Selecionados",
-  description:
-    "Os melhores empreendimentos de Itajaí, do centro à Praia Brava. Apartamentos de R$ 350 mil a R$ 5 milhões.",
+  title,
+  description,
+  alternates: { canonical: "/itajai/" },
+  openGraph: { title, description, type: "website", url: "https://afsimobiliaria.com.br/itajai/" },
 };
 
 export default function ItajaiPage() {

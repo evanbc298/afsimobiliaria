@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { WhatsappFloat } from "@/components/whatsapp-float";
+import { JsonLd } from "@/components/json-ld";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,14 +16,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://afsimobiliaria.com.br";
+
 export const metadata: Metadata = {
   title: {
     default: "AFS Imobiliária — Imóveis em Itajaí e Balneário Camboriú",
     template: "%s | AFS Imobiliária",
   },
   description:
-    "Assessoria imobiliária completa em Itajaí e Balneário Camboriú, do início do processo até a entrega das chaves. 20 empreendimentos selecionados.",
-  metadataBase: new URL("https://afsimobiliaria.com.br"),
+    "Assessoria imobiliária completa em Itajaí e Balneário Camboriú, do início do processo até a entrega das chaves. 20 empreendimentos selecionados, de R$ 250 mil a R$ 50 milhões.",
+  keywords: [
+    "imobiliária Itajaí",
+    "imobiliária Balneário Camboriú",
+    "apartamento Itajaí",
+    "apartamento Balneário Camboriú",
+    "comprar apartamento Santa Catarina",
+    "empreendimentos Praia Brava",
+  ],
+  metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -30,6 +44,33 @@ export const metadata: Metadata = {
     title: "AFS Imobiliária — Imóveis em Itajaí e Balneário Camboriú",
     description:
       "Assessoria imobiliária completa em Itajaí e Balneário Camboriú, do início do processo até a entrega das chaves.",
+    images: [{ url: "/logo-og.png", width: 1408, height: 768, alt: "AFS Imobiliária" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AFS Imobiliária — Imóveis em Itajaí e Balneário Camboriú",
+    description:
+      "Assessoria imobiliária completa em Itajaí e Balneário Camboriú, do início do processo até a entrega das chaves.",
+    images: ["/logo-og.png"],
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  name: "AFS Imobiliária",
+  url: SITE_URL,
+  logo: `${SITE_URL}/logo.png`,
+  image: `${SITE_URL}/logo-og.png`,
+  identifier: "CRECI 31495",
+  areaServed: [
+    { "@type": "City", name: "Itajaí" },
+    { "@type": "City", name: "Balneário Camboriú" },
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressRegion: "SC",
+    addressCountry: "BR",
   },
 };
 
@@ -44,6 +85,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-afs-cream">
+        <JsonLd data={organizationJsonLd} />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -3,10 +3,15 @@ import { ContactForm } from "@/components/contact-form";
 import { whatsappLink } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/button";
 
+const title = "Fale Conosco — Agende sua Visita";
+const description =
+  "Entre em contato para agendar uma visita virtual ou presencial. Atendimento em Itajaí e Balneário Camboriú.";
+
 export const metadata: Metadata = {
-  title: "Fale Conosco — Agende sua Visita",
-  description:
-    "Entre em contato para agendar uma visita virtual ou presencial. Atendimento em Itajaí e Balneário Camboriú.",
+  title,
+  description,
+  alternates: { canonical: "/contato/" },
+  openGraph: { title, description, type: "website", url: "https://afsimobiliaria.com.br/contato/" },
 };
 
 export default function ContatoPage() {

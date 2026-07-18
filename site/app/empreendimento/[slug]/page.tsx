@@ -3,9 +3,12 @@ import { notFound } from "next/navigation";
 import { MapPin, Ruler, Building2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ContactForm } from "@/components/contact-form";
+import { JsonLd } from "@/components/json-ld";
 import { properties, getPropertyBySlug } from "@/lib/data/properties";
 import { whatsappLink } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/button";
+
+const SITE_URL = "https://afsimobiliaria.com.br";
 
 export async function generateStaticParams() {
   return properties.map((p) => ({ slug: p.slug }));
@@ -20,9 +23,21 @@ export async function generateMetadata({
   const property = getPropertyBySlug(slug);
   if (!property) return {};
 
+  const title = `${property.name} — ${property.neighborhood}`;
+  const description = `${property.name} em ${property.location}. ${property.typology} de ${property.area} a partir de ${property.priceDisplay}. ${property.differentials[0]}.`;
+
   return {
-    title: `${property.name} — ${property.neighborhood}`,
-    description: `${property.name} em ${property.location}. ${property.typology} de ${property.area} a partir de ${property.priceDisplay}. ${property.differentials[0]}.`,
+    title,
+    description,
+    alternates: {
+      canonical: `/empreendimento/${property.slug}/`,
+    },
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      url: `${SITE_URL}/empreendimento/${property.slug}/`,
+    },
   };
 }
 
@@ -36,8 +51,34 @@ export default async function PropertyPage({
 
   if (!property) notFound();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateListing",
+    name: property.name,
+    description: property.description,
+    url: `${SITE_URL}/empreendimento/${property.slug}/`,
+    datePosted: "2026-07-18",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: property.city,
+      addressRegion: "SC",
+      addressCountry: "BR",
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "BRL",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        minPrice: property.priceMin,
+        maxPrice: property.priceMax,
+        priceCurrency: "BRL",
+      },
+    },
+  };
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <JsonLd data={jsonLd} />
       <div className="mb-8 flex aspect-[21/9] items-center justify-center rounded-lg bg-afs-navy/5">
         <span className="text-afs-navy/30">Galeria de fotos em breve</span>
       </div>

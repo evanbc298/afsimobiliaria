@@ -76,3 +76,21 @@ genéricos que não são da AFS):
 **Ainda pendente:** site de referência visual (link que o usuário disse que
 ia mandar) — os 20 imóveis já chegaram via este documento, isso resolve
 essa parte do que estava bloqueando o projeto do site.
+
+## Site em construção (2026-07-17/18)
+
+Código em `site/` no mesmo repositório (`evanbc298/afsimobiliaria`), deploy
+via GitHub Actions pra GitHub Pages, domínio `afsimobiliaria.com.br`
+(aguardando o usuário configurar DNS — cliente dele ainda não passou acesso
+ao Registro.br).
+
+**Diretriz explícita do usuário (2026-07-18):** o site precisa ser
+impecável e o SEO tem que ser prioridade forte — "precisamos sobressair em
+busca orgânica". Não é um requisito qualquer, é cobrança direta. Toda
+decisão de conteúdo/estrutura do site daqui pra frente considerar SEO
+primeiro, não como reboque.
+
+**Pendências ativas:**
+- Usuário vai mandar os 20 empreendimentos reais (fotos, descrições) —
+  provavelmente amanhã (confirmou que são os mesmos 20 do documento técnico)
+- DNS do domínio — depende do cliente dele liberar acesso ao Registro.br
