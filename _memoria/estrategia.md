@@ -90,7 +90,31 @@ busca orgânica". Não é um requisito qualquer, é cobrança direta. Toda
 decisão de conteúdo/estrutura do site daqui pra frente considerar SEO
 primeiro, não como reboque.
 
+**SEO implementado (2026-07-18):** sitemap.xml, robots.txt, JSON-LD
+(Organization/RealEstateAgent no layout + RealEstateListing por imóvel),
+canonical e Open Graph em todas as páginas. Deploy automático confirmado
+funcionando (workflow do GitHub Actions passou com sucesso).
+
+**Dados dos empreendimentos atualizados (2026-07-18):** usuário mandou
+`marketing/pesquisa/fotos-caracteristicas-20-empreendimentos-2026-07-18.md`
+com pesquisa real da web. 13 dos 20 empreendimentos tiveram dados
+confirmados (endereço exato, preço real, diferenciais) e já foram
+atualizados em `site/lib/data/properties.ts`. Preços mudaram bastante em
+alguns casos (ex: Alameda Dom Bosco 400K→550K, Marina Bay 1,2M→2,159M,
+Sky Brava 700K→1,29M + status virou "Pronto").
+
+**Pendente — 7 empreendimentos sem dados confirmados:** Essência Residence,
+Lago di San Pellegrino, Upper Smart Home, Space Soul, Atmosphere Spa Home
+Club, Reserva Recife, Viva 360. Continuam com dados estimados/placeholder.
+Usuário tem acesso ao DWV App (app.dwvapp.com.br) pra verificar esses —
+avisar que ainda faltam quando ele mandar fotos.
+
+**Fotos:** nenhum arquivo de imagem foi enviado ainda, só texto/pesquisa.
+Todas as páginas de empreendimento ainda mostram placeholder "Foto em
+breve". Isso é o próximo bloqueio real pro site ficar "impecável" — sem
+fotos reais não tem como lançar de verdade.
+
 **Pendências ativas:**
-- Usuário vai mandar os 20 empreendimentos reais (fotos, descrições) —
-  provavelmente amanhã (confirmou que são os mesmos 20 do documento técnico)
+- Fotos reais dos empreendimentos (ainda não enviadas)
+- Dados dos 7 empreendimentos não confirmados (verificar no DWV App)
 - DNS do domínio — depende do cliente dele liberar acesso ao Registro.br
