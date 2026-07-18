@@ -303,10 +303,30 @@ Produzidos como HTML autoral (fotos reais do imóvel embutidas, fonte Fira
 Sans via Adobe Fonts) e renderizados como PNG — não passou pelo Adobe
 Express porque o usuário pediu só arquivo de imagem pronto pra usar.
 
+**GA4 instalado (2026-07-18):** usuário criou a propriedade sozinho e mandou
+o Measurement ID (`G-CG8VVFXR13`). Instalado no site via `next/script` em
+`components/analytics.tsx`, carregando em todas as páginas. Confirmado no
+build. Meta Pixel ainda não — usuário disse que vai criar e avisa.
+
+**Pacote completo de criativos pro Alameda Jardins (2026-07-18):** usuário
+pediu pra expandir os 3 criativos estáticos em campanha completa. Entregue
+em `saidas/criativos-alameda-jardins-2026-07-18/`:
+- Vídeo de 22s (fachada + trechos reais andando pelo apê + fotos com legenda
+  + card de preço/CTA, sem áudio). **Importante:** dos 3 vídeos brutos que o
+  cliente mandou, um tinha uma pessoa aparecendo refletida no espelho aos 8s
+  — descartado por completo (não só o trecho, o vídeo inteiro) por questão
+  de direito de imagem de terceiro. Revisei quadro a quadro os outros 2
+  vídeos usados pra confirmar que não tinham ninguém.
+- Carrossel de 6 cards (fachada, living, terraço, cinema, piscina, fechamento)
+- Criativo de remarketing ("Ainda de olho no Alameda Jardins?") pra público
+  que já visitou o site/interagiu mas não converteu
+Total agora: 3 estáticos (escassez/lifestyle/investimento) + vídeo +
+carrossel + remarketing = 6 peças cobrindo todo o funil.
+
 **Pendências ativas:**
-- Meta Pixel / Google Analytics — perguntei ao usuário se quer que eu instale
-  antes de rodar tráfego pago; still aguardando os IDs (Pixel ID do Business
-  Manager / Measurement ID do GA4) pra poder configurar de verdade
+- Meta Pixel — usuário vai criar no Business Manager e avisa o ID
+- Vincular Instagram à Página do Facebook (usuário faz isso direto no
+  Business Manager, não depende do site)
 - Preço real de 5 empreendimentos ("Consulte-nos"): Sunny Coast, Saint John,
   Sapphire Tower, Garden Park Home Club, Reserva Recife
 - Preço/tipologia do Onne Home, se for cadastrar
