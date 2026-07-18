@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { MapPin, Ruler, Building2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ContactForm } from "@/components/contact-form";
+import { PropertyGallery } from "@/components/property-gallery";
 import { JsonLd } from "@/components/json-ld";
 import { properties, getPropertyBySlug } from "@/lib/data/properties";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -37,6 +38,7 @@ export async function generateMetadata({
       description,
       type: "website",
       url: `${SITE_URL}/empreendimento/${property.slug}/`,
+      ...(property.images.length > 0 && { images: [{ url: property.images[0] }] }),
     },
   };
 }
@@ -57,6 +59,7 @@ export default async function PropertyPage({
     name: property.name,
     description: property.description,
     url: `${SITE_URL}/empreendimento/${property.slug}/`,
+    ...(property.images.length > 0 && { image: `${SITE_URL}${property.images[0]}` }),
     datePosted: "2026-07-18",
     address: {
       "@type": "PostalAddress",
@@ -79,9 +82,7 @@ export default async function PropertyPage({
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <JsonLd data={jsonLd} />
-      <div className="mb-8 flex aspect-[21/9] items-center justify-center rounded-lg bg-afs-navy/5">
-        <span className="text-afs-navy/30">Galeria de fotos em breve</span>
-      </div>
+      <PropertyGallery images={property.images} name={property.name} />
 
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
         <div className="lg:col-span-2">

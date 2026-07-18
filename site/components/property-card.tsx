@@ -9,8 +9,17 @@ export function PropertyCard({ property }: { property: Property }) {
       href={`/empreendimento/${property.slug}`}
       className="group block overflow-hidden rounded-lg border border-afs-navy/10 bg-white transition-shadow hover:shadow-lg"
     >
-      <div className="relative flex aspect-[16/10] items-center justify-center bg-afs-navy/5">
-        <span className="text-sm text-afs-navy/30">Foto em breve</span>
+      <div className="relative flex aspect-[16/10] items-center justify-center overflow-hidden bg-afs-navy/5">
+        {property.images.length > 0 ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={property.images[0]}
+            alt={property.name}
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <span className="text-sm text-afs-navy/30">Foto em breve</span>
+        )}
         <Badge className="absolute left-3 top-3 bg-afs-navy text-afs-cream">{property.status}</Badge>
       </div>
       <div className="p-5">

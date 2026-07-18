@@ -109,12 +109,32 @@ Club, Reserva Recife, Viva 360. Continuam com dados estimados/placeholder.
 Usuário tem acesso ao DWV App (app.dwvapp.com.br) pra verificar esses —
 avisar que ainda faltam quando ele mandar fotos.
 
-**Fotos:** nenhum arquivo de imagem foi enviado ainda, só texto/pesquisa.
-Todas as páginas de empreendimento ainda mostram placeholder "Foto em
-breve". Isso é o próximo bloqueio real pro site ficar "impecável" — sem
-fotos reais não tem como lançar de verdade.
+**Fotos adicionadas (2026-07-18):** baixadas diretamente dos sites oficiais
+das construtoras/portais pros 13 empreendimentos confirmados (Lotisa,
+Atalaia, Alameda Dom Bosco, Fazenda Garden, A. Ducati, Terrace 360,
+Habitah, Marina Bay, Sky Brava, Brava Garden, Meridian Tower, Armani Casa,
+Senna Tower) — 4 a 20 fotos por imóvel, otimizadas (max 1920px, JPEG
+qualidade 80) e salvas em `site/public/images/<slug>/`. Card e página de
+detalhe (com galeria + miniaturas) já mostram as fotos reais. Os 7 sem
+dados confirmados continuam com placeholder "Foto em breve".
+
+**Atenção — origem das fotos:** parte veio de portais de terceiros
+(myside.com.br, Imobille) e tem marca d'água de outra imobiliária em
+algumas imagens (ex: A. Ducati, Sky Brava, Brava Garden). Serve pra
+lançar/testar, mas recomendar ao usuário pedir fotos oficiais sem marca
+d'água direto das construtoras antes de qualquer campanha paga de
+verdade — usar marca d'água de concorrente no próprio site não é ideal.
+
+**Onne Home:** empreendimento novo (Centro, Balneário Camboriú, "OBRA
+CONCLUÍDA") que o usuário mandou via link DWV, fora dos 20 originais.
+24 fotos baixadas em `site/public/images/onne-home/` e 6 vídeos
+localizados (não baixados, ficam linkados direto do CDN quando cadastrar).
+**Não cadastrado no site ainda** — falta preço e tipologia (tabela de
+preço indisponível no momento; usuário decidiu focar nos 20 confirmados
+primeiro e deixar o Onne Home em espera).
 
 **Pendências ativas:**
-- Fotos reais dos empreendimentos (ainda não enviadas)
 - Dados dos 7 empreendimentos não confirmados (verificar no DWV App)
+- Preço/tipologia do Onne Home, se for cadastrar
+- Fotos oficiais sem marca d'água (antes de campanha paga de verdade)
 - DNS do domínio — depende do cliente dele liberar acesso ao Registro.br

@@ -51,7 +51,7 @@ export const properties: Property[] = [
       "Centro — alta demanda de busca",
       "Ideal para investimento e primeiro imóvel",
     ],
-    images: [],
+    images: ["/images/lotisa-downtown/01.jpg", "/images/lotisa-downtown/02.jpg", "/images/lotisa-downtown/03.jpg", "/images/lotisa-downtown/04.jpg", "/images/lotisa-downtown/05.jpg", "/images/lotisa-downtown/06.jpg", "/images/lotisa-downtown/07.jpg", "/images/lotisa-downtown/08.jpg", "/images/lotisa-downtown/09.jpg", "/images/lotisa-downtown/10.jpg", "/images/lotisa-downtown/11.jpg", "/images/lotisa-downtown/12.jpg", "/images/lotisa-downtown/13.jpg", "/images/lotisa-downtown/14.jpg", "/images/lotisa-downtown/15.jpg", "/images/lotisa-downtown/16.jpg"],
     keywords: ["apartamento barato Itajaí", "imovel centro Itajaí", "apartamento 1 quarto Itajaí", "investir imóvel Itajaí"],
   },
   {
@@ -98,7 +98,7 @@ export const properties: Property[] = [
       "Sacada com churrasqueira",
       "Próximo a mercados, bancos e farmácias",
     ],
-    images: [],
+    images: ["/images/residencial-atalaia/01.jpg", "/images/residencial-atalaia/02.jpg", "/images/residencial-atalaia/03.jpg", "/images/residencial-atalaia/04.jpg"],
     keywords: ["apartamento São Vicente Itajaí", "financiamento Caixa Itajaí", "apartamento familiar Itajaí"],
   },
   {
@@ -123,7 +123,7 @@ export const properties: Property[] = [
       "Próximo ao Centro de Itajaí",
       "Entrega prevista para junho de 2028",
     ],
-    images: [],
+    images: ["/images/alameda-dom-bosco/01.jpg", "/images/alameda-dom-bosco/02.jpg", "/images/alameda-dom-bosco/03.jpg", "/images/alameda-dom-bosco/04.jpg", "/images/alameda-dom-bosco/05.jpg", "/images/alameda-dom-bosco/06.jpg", "/images/alameda-dom-bosco/07.jpg", "/images/alameda-dom-bosco/08.jpg", "/images/alameda-dom-bosco/09.jpg"],
     keywords: ["apartamento Dom Bosco Itajaí", "imovel familiar Itajaí", "sair do aluguel Itajaí"],
   },
   {
@@ -170,7 +170,7 @@ export const properties: Property[] = [
       "13 salas de funções diferentes",
       "Aceita permuta · selo Great Place to Work",
     ],
-    images: [],
+    images: ["/images/fazenda-garden/01.jpg", "/images/fazenda-garden/02.jpg", "/images/fazenda-garden/03.jpg", "/images/fazenda-garden/04.jpg", "/images/fazenda-garden/05.jpg", "/images/fazenda-garden/06.jpg", "/images/fazenda-garden/07.jpg", "/images/fazenda-garden/08.jpg", "/images/fazenda-garden/09.jpg", "/images/fazenda-garden/10.jpg", "/images/fazenda-garden/11.jpg", "/images/fazenda-garden/12.jpg", "/images/fazenda-garden/13.jpg", "/images/fazenda-garden/14.jpg", "/images/fazenda-garden/15.jpg", "/images/fazenda-garden/16.jpg"],
     keywords: ["apartamento Fazenda Itajaí", "RV Empreendimentos Itajaí", "permuta imóvel Itajaí"],
   },
   {
@@ -195,7 +195,7 @@ export const properties: Property[] = [
       "Construtora com 30+ anos de mercado",
       "A 1,5km do Centro de Itajaí",
     ],
-    images: [],
+    images: ["/images/a-ducati-residence/01.jpg", "/images/a-ducati-residence/02.jpg", "/images/a-ducati-residence/03.jpg", "/images/a-ducati-residence/04.jpg", "/images/a-ducati-residence/05.jpg", "/images/a-ducati-residence/06.jpg", "/images/a-ducati-residence/07.jpg", "/images/a-ducati-residence/08.jpg", "/images/a-ducati-residence/09.jpg", "/images/a-ducati-residence/10.jpg", "/images/a-ducati-residence/11.jpg", "/images/a-ducati-residence/12.jpg", "/images/a-ducati-residence/13.jpg", "/images/a-ducati-residence/14.jpg", "/images/a-ducati-residence/15.jpg", "/images/a-ducati-residence/16.jpg"],
     keywords: ["apartamento Racitec Itajaí", "imovel Fazenda Itajaí", "construtora tradicional Itajaí"],
   },
   {
@@ -220,7 +220,7 @@ export const properties: Property[] = [
       "Selo Verde Sustentável",
       "Entre a Beira-rio, o Centro e a Praia Brava",
     ],
-    images: [],
+    images: ["/images/terrace-360/01.jpg", "/images/terrace-360/02.jpg", "/images/terrace-360/03.jpg", "/images/terrace-360/04.jpg", "/images/terrace-360/05.jpg", "/images/terrace-360/06.jpg", "/images/terrace-360/07.jpg", "/images/terrace-360/08.jpg", "/images/terrace-360/09.jpg", "/images/terrace-360/10.jpg", "/images/terrace-360/11.jpg", "/images/terrace-360/12.jpg", "/images/terrace-360/13.jpg", "/images/terrace-360/14.jpg", "/images/terrace-360/15.jpg"],
     keywords: ["apartamento sustentável Itajaí", "empreendimento verde Itajaí", "Home Club Itajaí"],
   },
   {
@@ -244,7 +244,7 @@ export const properties: Property[] = [
       "Av. Osvaldo Reis — acesso estratégico entre BC e Itajaí",
       "Praia Brava — bairro nobre em ascensão",
     ],
-    images: [],
+    images: ["/images/habitah-praia-brava/01.jpg", "/images/habitah-praia-brava/02.jpg", "/images/habitah-praia-brava/03.jpg", "/images/habitah-praia-brava/04.jpg", "/images/habitah-praia-brava/05.jpg", "/images/habitah-praia-brava/06.jpg", "/images/habitah-praia-brava/07.jpg", "/images/habitah-praia-brava/08.jpg", "/images/habitah-praia-brava/09.jpg", "/images/habitah-praia-brava/10.jpg", "/images/habitah-praia-brava/11.jpg", "/images/habitah-praia-brava/12.jpg", "/images/habitah-praia-brava/13.jpg", "/images/habitah-praia-brava/14.jpg"],
     keywords: ["apartamento Praia Brava Itajaí", "imovel vista mar Itajaí", "Praia Brava lançamento"],
   },
 
@@ -291,7 +291,7 @@ export const properties: Property[] = [
       "Rua Laguna — endereço charmoso",
       "Sustentabilidade e design arquitetônico",
     ],
-    images: [],
+    images: ["/images/marina-bay/01.jpg", "/images/marina-bay/02.jpg", "/images/marina-bay/03.jpg", "/images/marina-bay/04.jpg", "/images/marina-bay/05.jpg", "/images/marina-bay/06.jpg", "/images/marina-bay/07.jpg", "/images/marina-bay/08.jpg", "/images/marina-bay/09.jpg", "/images/marina-bay/10.jpg", "/images/marina-bay/11.jpg", "/images/marina-bay/12.jpg"],
     keywords: ["apartamento sustentável Itajaí", "design arquitetônico Itajaí", "apartamento grande Itajaí"],
   },
   {
@@ -316,7 +316,7 @@ export const properties: Property[] = [
       "Preço de custo (25-45% abaixo do mercado)",
       "Home club completo",
     ],
-    images: [],
+    images: ["/images/sky-brava-residence/01.jpg", "/images/sky-brava-residence/02.jpg", "/images/sky-brava-residence/03.jpg", "/images/sky-brava-residence/04.jpg", "/images/sky-brava-residence/05.jpg", "/images/sky-brava-residence/06.jpg", "/images/sky-brava-residence/07.jpg", "/images/sky-brava-residence/08.jpg", "/images/sky-brava-residence/09.jpg", "/images/sky-brava-residence/10.jpg", "/images/sky-brava-residence/11.jpg", "/images/sky-brava-residence/12.jpg", "/images/sky-brava-residence/13.jpg", "/images/sky-brava-residence/14.jpg"],
     keywords: ["apartamento preço custo Praia Brava", "LD Construções Itajaí", "apartamento barato Praia Brava"],
   },
   {
@@ -341,7 +341,7 @@ export const properties: Property[] = [
       "Até 3 vagas de garagem",
       "Conceito resort",
     ],
-    images: [],
+    images: ["/images/brava-garden-residence/01.jpg", "/images/brava-garden-residence/02.jpg", "/images/brava-garden-residence/03.jpg", "/images/brava-garden-residence/04.jpg", "/images/brava-garden-residence/05.jpg", "/images/brava-garden-residence/06.jpg", "/images/brava-garden-residence/07.jpg", "/images/brava-garden-residence/08.jpg", "/images/brava-garden-residence/09.jpg", "/images/brava-garden-residence/10.jpg", "/images/brava-garden-residence/11.jpg", "/images/brava-garden-residence/12.jpg", "/images/brava-garden-residence/13.jpg", "/images/brava-garden-residence/14.jpg"],
     keywords: ["garden residence Praia Brava", "apartamento resort Itajaí", "luxo Praia Brava"],
   },
   {
@@ -408,7 +408,7 @@ export const properties: Property[] = [
       "Liquidez comprovada (RV Empreendimentos)",
       "Condições especiais em construção",
     ],
-    images: [],
+    images: ["/images/meridian-tower/01.jpg", "/images/meridian-tower/02.jpg", "/images/meridian-tower/03.jpg", "/images/meridian-tower/04.jpg", "/images/meridian-tower/05.jpg", "/images/meridian-tower/06.jpg", "/images/meridian-tower/07.jpg", "/images/meridian-tower/08.jpg", "/images/meridian-tower/09.jpg", "/images/meridian-tower/10.jpg", "/images/meridian-tower/11.jpg", "/images/meridian-tower/12.jpg", "/images/meridian-tower/13.jpg", "/images/meridian-tower/14.jpg", "/images/meridian-tower/15.jpg", "/images/meridian-tower/16.jpg", "/images/meridian-tower/17.jpg", "/images/meridian-tower/18.jpg"],
     keywords: ["Meridian Tower Barra Sul", "apartamento marina BC", "RV Empreendimentos BC"],
   },
   {
@@ -453,7 +453,7 @@ export const properties: Property[] = [
       "Aprovado pessoalmente por Giorgio Armani",
       "Frente-mar na Barra Sul · certificação LEED",
     ],
-    images: [],
+    images: ["/images/armani-casa-residences/01.jpg", "/images/armani-casa-residences/02.jpg", "/images/armani-casa-residences/03.jpg"],
     keywords: ["Armani Casa Residences BC", "Giorgio Armani apartamento BC", "luxo Armani Balneário Camboriú"],
   },
   {
@@ -479,7 +479,7 @@ export const properties: Property[] = [
       "Piscinas em balanço (endless view) + elevador de carro nas mansões suspensas",
       "Design assinado por Lalalli Senna",
     ],
-    images: [],
+    images: ["/images/senna-tower/01.jpg", "/images/senna-tower/02.jpg", "/images/senna-tower/03.jpg", "/images/senna-tower/04.jpg", "/images/senna-tower/05.jpg", "/images/senna-tower/06.jpg", "/images/senna-tower/07.jpg", "/images/senna-tower/08.jpg", "/images/senna-tower/09.jpg", "/images/senna-tower/10.jpg", "/images/senna-tower/11.jpg", "/images/senna-tower/12.jpg", "/images/senna-tower/13.jpg", "/images/senna-tower/14.jpg", "/images/senna-tower/15.jpg", "/images/senna-tower/16.jpg", "/images/senna-tower/17.jpg"],
     keywords: ["Senna Tower BC", "maior residencial do mundo", "Ayrton Senna apartamento", "triplex luxo BC"],
   },
 ];
