@@ -287,12 +287,23 @@ em `/empreendimento/apartamento-alameda-jardins`.
 subir pro site ou usar direto nos criativos de Meta Ads. A pasta original
 `IMOVEL SADI/` na raiz do repo local (com o .txt, a foto solta e os 2 .zip)
 não foi commitada — fica só local, não sobe pro GitHub.
-**Ainda pendente do pedido original:** os 3 modelos de criativo com copy pro
-Meta Ads sobre esse imóvel — ainda não comecei.
+
+**3 criativos de Meta Ads produzidos (2026-07-18):** usuário pediu estratégia
+de 3 criativos com 3 objetivos, focando em escassez, deixando o resto comigo.
+Entregue em `saidas/criativos-alameda-jardins-2026-07-18/` (imagens 1080x1080
++ `estrategia.md` com o racional de cada um):
+1. **Escassez** — "Único no mercado." / "Não é lançamento" — foco em urgência,
+   preço em destaque, público frio/morno.
+2. **Lifestyle** — "Sua vida com vista para o mar começa agora." — foco em
+   desejo/aspiração, mobiliado e pronto, público mais amplo de topo de funil.
+3. **Investimento/Negociação** — "Aceita carro ou outro imóvel na
+   negociação." — foco na condição de pagamento flexível (sem banco),
+   público de intenção mais alta.
+Produzidos como HTML autoral (fotos reais do imóvel embutidas, fonte Fira
+Sans via Adobe Fonts) e renderizados como PNG — não passou pelo Adobe
+Express porque o usuário pediu só arquivo de imagem pronto pra usar.
 
 **Pendências ativas:**
-- 3 modelos de criativo (copy) pro Meta Ads sobre o Alameda Jardins — pedido
-  original do usuário, ainda não executado
 - Meta Pixel / Google Analytics — perguntei ao usuário se quer que eu instale
   antes de rodar tráfego pago; still aguardando os IDs (Pixel ID do Business
   Manager / Measurement ID do GA4) pra poder configurar de verdade
