@@ -1,10 +1,43 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
+const SLIDES = [
+  { src: "/images/hero/balneario-skyline.jpg", alt: "Orla de Balneário Camboriú" },
+  { src: "/images/hero/itajai-praia-brava.jpg", alt: "Praia Brava, Itajaí" },
+  { src: "/images/hero/balneario-orla.jpg", alt: "Calçadão da Praia Central de Balneário Camboriú" },
+];
+
 export function Hero() {
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((current) => (current + 1) % SLIDES.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-afs-navy px-4 py-24 text-afs-cream sm:px-6 sm:py-32">
-      <div className="mx-auto max-w-4xl text-center">
+      <div className="absolute inset-0">
+        {SLIDES.map((slide, i) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            key={slide.src}
+            src={slide.src}
+            alt={slide.alt}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms] ease-in-out ${
+              i === active ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-b from-afs-navy/90 via-afs-navy/75 to-afs-navy/90" />
+      </div>
+
+      <div className="relative mx-auto max-w-4xl text-center">
         <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-afs-gold">
           Itajaí &amp; Balneário Camboriú
         </p>
