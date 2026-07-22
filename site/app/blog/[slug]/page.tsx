@@ -101,6 +101,21 @@ export default async function BlogPostPage({
                 {paragraph}
               </p>
             ))}
+            {section.links && section.links.length > 0 && (
+              <p className="mb-4 flex flex-wrap gap-x-2 gap-y-1 text-sm">
+                <span className="text-afs-navy/50">Confira:</span>
+                {section.links.map((link, k) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="font-medium text-afs-navy underline decoration-afs-gold decoration-2 underline-offset-2 hover:text-afs-gold"
+                  >
+                    {link.label}
+                    {k < section.links!.length - 1 && <span className="text-afs-navy/30 no-underline">,</span>}
+                  </Link>
+                ))}
+              </p>
+            )}
           </div>
         ))}
       </div>

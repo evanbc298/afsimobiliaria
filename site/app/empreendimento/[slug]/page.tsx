@@ -86,7 +86,7 @@ export default async function PropertyPage({
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <JsonLd data={jsonLd} />
-      <PropertyGallery images={property.images} name={property.name} />
+      <PropertyGallery images={property.images} name={property.name} location={property.location} />
 
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
         <div className="lg:col-span-2">

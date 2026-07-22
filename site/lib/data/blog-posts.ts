@@ -31,6 +31,10 @@ export const blogPosts: BlogPost[] = [
           "O litoral norte de Santa Catarina movimentou R$ 13,47 bilhões em VGV (Valor Geral de Vendas) em 2025. Nesse período, Balneário Camboriú e Itajaí venderam 1.081 unidades, um crescimento de 70% no volume e 42% no VGV frente a 2023.",
           "O ticket médio em Balneário Camboriú hoje gira em torno de R$ 2,2 milhões — reflexo direto da concentração de empreendimentos de altíssimo padrão na Barra Sul e no Centro, onde torres como o Senna Tower (o maior residencial do mundo, com entrega prevista para 2033) e o Armani Casa Residences elevam o patamar da região.",
         ],
+        links: [
+          { label: "Senna Tower", href: "/empreendimento/senna-tower" },
+          { label: "Armani Casa Residences", href: "/empreendimento/armani-casa-residences" },
+        ],
       },
       {
         heading: "Por que a valorização não para",
@@ -44,6 +48,10 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Nem todo investidor precisa (ou quer) mirar num apartamento de R$ 25 milhões. O mercado de BC tem camadas: empreendimentos de entrada a partir de R$ 250 mil em Itajaí, opções de alto padrão a partir de R$ 800 mil, e o segmento de luxo absoluto acima de R$ 3 milhões na Barra Sul.",
           "A pergunta certa não é \"BC vale a pena\" — os números já respondem isso. A pergunta é qual empreendimento, qual bairro e qual momento de entrada fazem sentido pro seu perfil. É exatamente aí que uma assessoria séria faz diferença: comparando tickets, prazos de entrega e potencial de valorização bairro a bairro.",
+        ],
+        links: [
+          { label: "empreendimentos em Itajaí", href: "/itajai" },
+          { label: "empreendimentos em Balneário Camboriú", href: "/balneario-camboriu" },
         ],
       },
     ],
@@ -76,6 +84,10 @@ export const blogPosts: BlogPost[] = [
         heading: "As alíquotas na região",
         body: [
           "Em Balneário Camboriú, o ITBI é de 3% sobre o valor da transação (ou o valor venal do imóvel, o que for maior). Em Itajaí, a alíquota é de 2%. Numa compra de R$ 1 milhão, isso significa R$ 30 mil em BC contra R$ 20 mil em Itajaí — uma diferença que precisa entrar na conta na hora de comparar cidades.",
+        ],
+        links: [
+          { label: "imóveis em Itajaí", href: "/itajai" },
+          { label: "imóveis em Balneário Camboriú", href: "/balneario-camboriu" },
         ],
       },
       {
@@ -124,6 +136,12 @@ export const blogPosts: BlogPost[] = [
           "A Praia Brava tem o que poucos bairros conseguem reunir: praia, proximidade com o Centro de Itajaí e acesso rápido pra Balneário Camboriú pela Av. Osvaldo Reis — o principal corredor entre as duas cidades. Não é exagero dizer que ela virou uma extensão natural do polo imobiliário de BC, só que com preços ainda mais acessíveis.",
           "É por isso que concentra parte relevante dos lançamentos de alto padrão de Itajaí: Sky Brava Residence, Habitah Praia Brava, Brava Garden Residence, Terrace 360 — todos na região, todos com apelo direto pra quem quer o estilo de vida de BC sem pagar o ticket de BC.",
         ],
+        links: [
+          { label: "Sky Brava Residence", href: "/empreendimento/sky-brava-residence" },
+          { label: "Habitah Praia Brava", href: "/empreendimento/habitah-praia-brava" },
+          { label: "Brava Garden Residence", href: "/empreendimento/brava-garden-residence" },
+          { label: "Terrace 360", href: "/empreendimento/terrace-360" },
+        ],
       },
       {
         heading: "O perfil de quem compra",
@@ -137,6 +155,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Nem toda quadra da Praia Brava tem o mesmo status — proximidade da praia, vista e distância da Av. Osvaldo Reis mudam o preço final de forma significativa. Vale a pena comparar mais de um empreendimento antes de decidir, e entender se o objetivo é morar, alugar por temporada ou reter pra valorização de longo prazo — a resposta muda a escolha certa dentro do bairro.",
         ],
+        links: [{ label: "ver empreendimentos em Itajaí", href: "/itajai" }],
       },
     ],
   },
@@ -193,6 +212,7 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Balneário Camboriú tem infraestrutura de cidade grande — hospitais, escolas internacionais, shoppings — dentro do tamanho de uma cidade de praia. É essa combinação que segura o morador o ano inteiro, não só o turista na alta temporada. Se esse é o seu plano, vale conhecer os bairros com calma antes de decidir onde comprar.",
         ],
+        links: [{ label: "ver empreendimentos em Balneário Camboriú", href: "/balneario-camboriu" }],
       },
     ],
   },
@@ -226,6 +246,7 @@ export const blogPosts: BlogPost[] = [
           "Comprar na planta costuma significar o menor preço por metro quadrado disponível pra aquele empreendimento — e condições de pagamento parceladas direto com a construtora, sem depender de financiamento bancário imediato. É a porta de entrada mais acessível pra empreendimentos que, prontos, custariam bem mais.",
           "O outro lado: o comprador espera. Prazos de entrega na região costumam variar de 2 a 7 anos, dependendo do porte do empreendimento — o Senna Tower, por exemplo, tem entrega prevista só para 2033. Esperar tem custo de oportunidade, e imprevistos de obra acontecem.",
         ],
+        links: [{ label: "Senna Tower", href: "/empreendimento/senna-tower" }],
       },
       {
         heading: "Pronto: o argumento é a certeza",
@@ -233,6 +254,7 @@ export const blogPosts: BlogPost[] = [
           "Imóvel pronto elimina o risco de prazo — o que você vê é o que você compra, sem depender de cronograma de construção. Serve bem pra quem quer morar já ou começar a alugar (seja anual ou por temporada) imediatamente, sem período de obra sem retorno.",
           "O Sky Brava Residence, na Praia Brava, é um bom exemplo dessa categoria na região: entregue, com rooftop e vista pro mar já disponíveis, sem espera.",
         ],
+        links: [{ label: "Sky Brava Residence", href: "/empreendimento/sky-brava-residence" }],
       },
       {
         heading: "Como decidir",
@@ -272,6 +294,10 @@ export const blogPosts: BlogPost[] = [
         body: [
           "Em Balneário Camboriú, a ocupação média fica entre 60% e 70% ao longo do ano. A diária média varia por tamanho de imóvel: de R$ 350 a R$ 450 em apartamentos de 2 quartos, e de R$ 450 a R$ 600 em imóveis de 3 quartos ou mais.",
           "Em Itajaí, os números são um pouco mais modestos, mas ainda sólidos: ocupação entre 55% e 65%, diárias de R$ 280 a R$ 450 dependendo do padrão e da proximidade da praia.",
+        ],
+        links: [
+          { label: "empreendimentos em Balneário Camboriú", href: "/balneario-camboriu" },
+          { label: "empreendimentos em Itajaí", href: "/itajai" },
         ],
       },
       {

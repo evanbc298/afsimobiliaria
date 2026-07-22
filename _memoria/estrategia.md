@@ -334,3 +334,35 @@ carrossel + remarketing = 6 peças cobrindo todo o funil.
 - Avatar do widget de chat é a logo por enquanto — trocar por foto real quando tiver
 - Mais fotos de bairros/empreendimentos específicos pro blog, se usuário quiser expandir
 - 3 vídeos do Alameda Jardins — decidir se sobem pro site ou viram material de anúncio
+
+## Auditoria e implementação de SEO (2026-07-21)
+
+Rodada completa dos 8 passos da skill `/seo`, outputs em `marketing/seo/00` a
+`08`. Achado central: o site tem base técnica boa mas **zero visibilidade no
+Google** (não aparece nem pelo próprio nome) — causa provável é simplesmente não
+ter sido submetido ao Search Console ainda (site tem só 4 dias no ar), não ter
+Google Meu Negócio, e zero backlinks. Mesmo problema explica a ausência nas IAs
+generativas (GEO), já que muitas usam o índice do Google por baixo dos panos.
+
+Análise de concorrência (Imobille, Guilherme Pilger — 4,6★/164 avaliações e 500k+
+seguidores, Max Imóveis, LFB Imóveis) identificou um gap claro: conteúdo
+informacional do nicho ("vale a pena investir") é raso em dado concreto e enterra
+a resposta no final — oportunidade de diferenciação real e replicável.
+
+**Implementado direto no código nesta sessão** (`site/`):
+- Alt text de imagens de empreendimento mais descritivo (nome + tipologia + bairro)
+- Internal linking: os 6 posts do blog agora linkam pra empreendimentos/páginas de
+  cidade que só citavam em texto solto antes (campo novo `links` em `BlogSection`)
+- Componente `Faq` reutilizável com schema `FAQPage` (JSON-LD) — usado na home (5
+  perguntas institucionais) e nas 3 páginas de cidade (FAQ local com ITBI, ticket
+  médio, bairros, ROI de Airbnb — dados já existentes no blog, sem inventar nada)
+- Build de produção + lint rodados depois das mudanças — 46 páginas geram sem erro
+
+**Pendências que só o usuário consegue fazer** (login Google):
+- Google Search Console — verificar propriedade, submeter sitemap, pedir
+  indexação manual. Prioridade #1, resolve o gargalo central.
+- Google Meu Negócio — criar/completar perfil, começar a pedir avaliações
+- Itapema não tem nenhum post de blog ainda — é a prioridade do calendário
+  editorial (`05-estrategia-conteudo.md`)
+- Estrutura de Google Ads pronta em `06-google-ads.md`, nada ativado ainda —
+  CPC de mercado (R$5-12) citado com fonte real, não é garantia pra conta própria

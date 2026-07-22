@@ -2,7 +2,16 @@
 
 import { useState } from "react";
 
-export function PropertyGallery({ images, name }: { images: string[]; name: string }) {
+export function PropertyGallery({
+  images,
+  name,
+  location,
+}: {
+  images: string[];
+  name: string;
+  location?: string;
+}) {
+  const altBase = location ? `${name} — ${location}` : name;
   const [active, setActive] = useState(0);
 
   if (images.length === 0) {
@@ -17,7 +26,7 @@ export function PropertyGallery({ images, name }: { images: string[]; name: stri
     <div className="mb-8">
       <div className="aspect-[21/9] overflow-hidden rounded-lg bg-afs-navy/5">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={images[active]} alt={name} className="h-full w-full object-cover" />
+        <img src={images[active]} alt={`${altBase} — foto ${active + 1}`} className="h-full w-full object-cover" />
       </div>
       {images.length > 1 && (
         <div className="mt-3 flex gap-2 overflow-x-auto pb-1">

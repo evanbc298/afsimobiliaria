@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PropertyFilterGrid } from "@/components/property-filter-grid";
+import { Faq } from "@/components/faq";
 import { getPropertiesByCity } from "@/lib/data/properties";
 
 const title = "Apartamentos em Itajaí — Empreendimentos Selecionados";
@@ -29,6 +30,27 @@ export default function ItajaiPage() {
         </p>
       </div>
       <PropertyFilterGrid properties={propertiesItajai} />
+
+      <Faq
+        title="Perguntas frequentes sobre imóveis em Itajaí"
+        items={[
+          {
+            question: "Qual o ITBI em Itajaí?",
+            answer:
+              "O ITBI (Imposto de Transmissão de Bens Imóveis) em Itajaí é de 2% sobre o valor da transação ou o valor venal, o que for maior. Numa compra de R$ 1 milhão, isso representa R$ 20 mil — é preciso ter esse valor disponível antes do registro em cartório.",
+          },
+          {
+            question: "Qual o bairro mais valorizado de Itajaí?",
+            answer:
+              "A Praia Brava é hoje o bairro mais valorizado de Itajaí, com preço médio por metro quadrado em torno de R$ 13.500 — acima da média geral da cidade, puxado pela proximidade com Balneário Camboriú e pelos lançamentos de alto padrão da região.",
+          },
+          {
+            question: "Vale a pena investir em Itajaí?",
+            answer:
+              "Itajaí valorizou 46% nos últimos 3 anos, beneficiada pela proximidade com Balneário Camboriú e por ter ticket de entrada mais acessível que a vizinha. É uma opção especialmente interessante pra quem busca o mesmo perfil de litoral com um investimento inicial menor.",
+          },
+        ]}
+      />
     </div>
   );
 }

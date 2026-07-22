@@ -3,6 +3,7 @@ import { Home as HomeIcon, TrendingUp } from "lucide-react";
 import { Hero } from "@/components/hero";
 import { StatsBar } from "@/components/stats-bar";
 import { PropertyCarousel } from "@/components/property-carousel";
+import { Faq } from "@/components/faq";
 import { Button } from "@/components/ui/button";
 import { properties } from "@/lib/data/properties";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -93,6 +94,36 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Faq
+        items={[
+          {
+            question: "A AFS Imobiliária cobra alguma taxa do comprador?",
+            answer:
+              "Não. Nossa comissão é paga pela construtora ou pelo vendedor, como é padrão no mercado imobiliário — pra você, comprador, a assessoria da AFS não tem custo adicional sobre o preço do imóvel.",
+          },
+          {
+            question: "Em quais cidades a AFS Imobiliária atua?",
+            answer:
+              "Trabalhamos com empreendimentos selecionados em Itajaí, Balneário Camboriú e Itapema, no litoral norte de Santa Catarina.",
+          },
+          {
+            question: "Vocês ajudam com financiamento?",
+            answer:
+              "Sim. Temos um simulador de financiamento direto nas páginas de cada empreendimento, e acompanhamos todo o processo de aprovação de crédito junto ao banco ou à construtora.",
+          },
+          {
+            question: "Preciso morar em Santa Catarina para comprar com a AFS?",
+            answer:
+              "Não. Atendemos compradores de outras cidades e estados que buscam segunda residência ou investimento no litoral catarinense — negociação, documentação e acompanhamento podem ser feitos à distância, com visita presencial quando fizer sentido.",
+          },
+          {
+            question: "Qual a diferença entre comprar na planta e comprar pronto?",
+            answer:
+              "Na planta o preço de entrada costuma ser menor e o pagamento é parcelado direto com a construtora, mas há prazo de espera pela entrega. Pronto custa mais, mas elimina o risco de prazo de obra. A melhor opção depende do seu objetivo (morar, alugar ou valorização) — recomendamos conversar com um de nossos especialistas antes de decidir.",
+          },
+        ]}
+      />
     </>
   );
 }

@@ -14,7 +14,7 @@ export function PropertyCard({ property }: { property: Property }) {
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={property.images[0]}
-            alt={property.name}
+            alt={`${property.name} — ${property.typology} em ${property.location}`}
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
