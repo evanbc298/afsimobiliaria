@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/itapema/`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/blog/`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/contato/`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/en/`, changeFrequency: "monthly", priority: 0.7 },
   ];
 
   const propertyRoutes: MetadataRoute.Sitemap = properties.map((property) => ({

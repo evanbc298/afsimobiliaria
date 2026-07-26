@@ -13,6 +13,7 @@ const links = [
   { href: "/itapema", label: "Itapema" },
   { href: "/blog", label: "Blog" },
   { href: "/contato", label: "Contato" },
+  { href: "/en", label: "English" },
 ];
 
 export function Navbar() {

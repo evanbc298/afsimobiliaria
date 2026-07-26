@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { JsonLd } from "@/components/json-ld";
 import { Button } from "@/components/ui/button";
+import { Faq } from "@/components/faq";
 import { blogPosts, getBlogPostBySlug } from "@/lib/data/blog-posts";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -119,6 +120,12 @@ export default async function BlogPostPage({
           </div>
         ))}
       </div>
+
+      {post.faq && post.faq.length > 0 && (
+        <div className="-mx-4 sm:-mx-6">
+          <Faq title="Perguntas frequentes" items={post.faq} />
+        </div>
+      )}
 
       <div className="mt-10 rounded-lg bg-afs-navy px-6 py-8 text-center">
         <p className="text-lg font-semibold text-afs-cream">

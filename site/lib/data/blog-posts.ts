@@ -2,6 +2,88 @@ import { BlogPost } from "@/lib/types";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "brasileiro-no-exterior-comprar-imovel-bc-itajai-itapema",
+    title: "Brasileiro nos EUA: como comprar imóvel em Balneário Camboriú, Itajaí ou Itapema morando fora",
+    excerpt:
+      "A venda de imóveis no litoral catarinense pra brasileiros no exterior saltou de 5% em 2024 pra 12% em 2026. Veja o que muda no processo pra quem mora fora e como fechar negócio sem estar presencialmente no Brasil.",
+    category: "Guia Prático",
+    city: "Itajaí, Balneário Camboriú e Itapema",
+    image: "/images/blog/cidade/praia-rochas.jpg",
+    imageCredit: "Foto: Sjmartelli / Wikimedia Commons (CC BY-SA 4.0)",
+    date: "2026-07-25",
+    readingTime: 7,
+    seoDescription:
+      "Guia pra brasileiro morando nos Estados Unidos ou em qualquer país comprar imóvel em Balneário Camboriú, Itajaí ou Itapema: CPF de não residente, procuração, câmbio e impostos.",
+    keywords: [
+      "brasileiro no exterior comprar imóvel Brasil",
+      "brasileiro nos Estados Unidos investir Balneário Camboriú",
+      "CPF não residente comprar imóvel",
+      "comprar imóvel no Brasil morando fora",
+    ],
+    sections: [
+      {
+        body: [
+          "A venda de imóveis no litoral catarinense pra brasileiros que moram no exterior cresceu rápido: representava 5% do total em 2024, subiu pra 9% em 2025 e chegou a 12% até maio de 2026. Parte disso vem dos Estados Unidos, onde vivem 1,9 milhão de brasileiros — 41% de toda a comunidade brasileira no exterior. Câmbio favorável, renda em dólar e o desejo de manter um vínculo com o país puxam esse movimento, com Balneário Camboriú, Itajaí e Itapema entre os destinos mais procurados.",
+          "A pergunta que mais aparece não é \"vale a pena\" — os números já respondem isso. É \"como eu compro morando fora, sem poder estar no Brasil o tempo todo\". É isso que esse guia responde, passo a passo.",
+        ],
+      },
+      {
+        heading: "O CPF de não residente vem primeiro",
+        body: [
+          "CPF é obrigatório pra qualquer transação imobiliária no Brasil, morando aqui ou fora. Sem ele regularizado, não é possível assinar contrato, registrar escritura ou fazer a transferência bancária da compra. Quem mora no exterior tira o CPF direto num consulado brasileiro na sua cidade, ou por meio de um procurador aqui no Brasil — não precisa voltar ao país só pra isso.",
+        ],
+      },
+      {
+        heading: "Procuração: o detalhe que trava muita compra",
+        body: [
+          "Se você não pode estar presente pros atos de cartório, um procurador no Brasil assina em seu nome — mas a procuração precisa ter poderes específicos pra cada ato (assinar o contrato, representar em cartório, receber notificações). Procuração com poderes genéricos costuma ser recusada.",
+          "Se ela for feita fora do Brasil, precisa de Apostila de Haia e tradução juramentada pra valer em cartório brasileiro. É o detalhe mais comum de travar (ou atrasar) uma compra de quem mora fora — vale resolver isso antes de começar a procurar imóvel, não depois de já ter escolhido um.",
+        ],
+      },
+      {
+        heading: "O que muda na hora de trazer o dinheiro",
+        body: [
+          "Trazer o valor da compra do exterior passa por contrato de câmbio, documentação específica e, dependendo do caso, registro no Banco Central. O IOF sobre remessas internacionais foi revisado em 2025 (Decreto nº 12.499/2025), e a alíquota pode variar conforme a operação — vale confirmar o valor atual com um contador antes de fechar o câmbio, porque prazo ou declaração errada nessas operações pode gerar multa alta.",
+          "Na compra em si, não há cobrança de Imposto de Renda. Ele aparece só numa venda futura do imóvel, como ganho de capital — com alíquota efetiva geralmente de 15%, a mesma regra que vale pra quem mora no Brasil.",
+        ],
+      },
+      {
+        heading: "Onde entrar: Balneário Camboriú, Itajaí ou Itapema",
+        body: [
+          "Os três mercados têm perfis diferentes. Balneário Camboriú concentra o alto padrão consolidado, com o metro quadrado mais valorizado do país historicamente. Itapema assumiu em maio de 2026 o metro quadrado mais caro do Brasil, à frente até de BC — sinal de que a valorização ainda não parou por lá. Itajaí, especialmente na Praia Brava, oferece ticket de entrada mais competitivo com acesso rápido às duas outras cidades.",
+          "Pra quem está comprando à distância, essa comparação importa mais do que pareceria: o objetivo (morar, alugar por temporada ou reter pra valorização) muda qual das três faz mais sentido pro seu caso.",
+        ],
+        links: [
+          { label: "empreendimentos em Balneário Camboriú", href: "/balneario-camboriu" },
+          { label: "empreendimentos em Itajaí", href: "/itajai" },
+          { label: "empreendimentos em Itapema", href: "/itapema" },
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Preciso estar no Brasil pra comprar um imóvel?",
+        answer:
+          "Não. Com CPF regularizado e uma procuração específica registrada em cartório, é possível fechar a compra inteira sem estar presencialmente no país.",
+      },
+      {
+        question: "Como tiro CPF morando fora do Brasil?",
+        answer:
+          "Direto num consulado brasileiro na sua cidade, ou por meio de um procurador no Brasil — não é necessário viajar só pra isso.",
+      },
+      {
+        question: "A procuração feita fora do Brasil serve em qualquer cartório?",
+        answer:
+          "Só se tiver Apostila de Haia e tradução juramentada. Procuração sem isso, ou com poderes genéricos em vez de específicos pra cada ato, costuma ser recusada pelo cartório.",
+      },
+      {
+        question: "Vou pagar imposto na hora de comprar?",
+        answer:
+          "Não incide Imposto de Renda na compra em si — ele aparece só na venda futura, como ganho de capital. Na entrada do dinheiro do exterior incide o IOF sobre a operação de câmbio, com regras revisadas em 2025; vale confirmar o valor atual com um contador antes de fechar o câmbio.",
+      },
+    ],
+  },
+  {
     slug: "por-que-investir-em-balneario-camboriu-2026",
     title: "Por que investir em Balneário Camboriú em 2026",
     excerpt:

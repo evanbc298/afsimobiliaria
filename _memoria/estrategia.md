@@ -358,6 +358,59 @@ a resposta no final — oportunidade de diferenciação real e replicável.
   médio, bairros, ROI de Airbnb — dados já existentes no blog, sem inventar nada)
 - Build de produção + lint rodados depois das mudanças — 46 páginas geram sem erro
 
+## Conteúdo pra brasileiro no exterior + 2 e-books de lead (2026-07-25)
+
+Pesquisa confirmou tendência real (fontes em
+`marketing/pesquisa/plano-estrategico-digital-imobiliario-bc-referencia-externa-2026-07-25.md`
+e nos READMEs dos e-books): venda pra brasileiro no exterior no litoral
+catarinense foi de 5% (2024) a 12% (mai/2026) do total. Implementado:
+- Novo post de blog `/blog/brasileiro-no-exterior-comprar-imovel-bc-itajai-itapema`
+  com FAQ schema próprio (novo campo `faq?` em `BlogPost`, renderizado condicionalmente
+  em `blog/[slug]/page.tsx` via componente `Faq`)
+- 2 e-books/isca de lead em `marketing/conteudo/`: guia geral do investidor
+  (`ebook-guia-investidor-bc-2026-07-25/`) e checklist específico pro comprador
+  no exterior (`checklist-comprador-brasileiro-exterior-2026-07-25/`) — ambos
+  em PDF, mesma identidade visual, CTA de WhatsApp real. **Nenhum dos dois está
+  linkado no site ainda** — falta decidir formulário de download vs. envio
+  manual.
+- Escopo importante: AFS não tem imóvel em Porto Belo/Bombinhas — conteúdo
+  menciona a região só como contexto, sem criar página própria pra essas
+  cidades.
+
+## Página em inglês pra comprador internacional (2026-07-25)
+
+Pesquisa confirmou demanda real (não é só brasileiro no exterior): já existem
+especialistas dedicados atendendo esse público em BC (Rocks Investments,
+Oliveira Lawyers) e portais internacionais (Properstar, Holprop, LuxuryEstate)
+— BC é conhecida como "Brazilian Dubai" em veículos de língua inglesa. Achado
+forte: visto VIPER (residência por investimento imobiliário de R$1M+, caminho
+pra cidadania em 4 anos) — pouco explorado por concorrentes, virou o gancho
+principal da página.
+
+Implementado: `/en` (`site/app/en/page.tsx`) — página única em inglês (não é
+site bilíngue completo, decisão consciente: traduzir as 28 fichas de imóvel +
+7 posts de blog + toda a interface seria trabalho contínuo em dobro pra uma
+operação solo). Hreflang recíproco configurado (`/` ↔ `/en/`), incluída no
+sitemap, link "English" adicionado na navbar. Confirmado com o usuário antes de
+escrever: atendimento em inglês é por WhatsApp com apoio de tradutor (não
+prometer ligação/chamada fluente) — página reflete isso com honestidade nas
+FAQs, e o aviso de visto deixa claro que não substitui advogado de imigração.
+
+Se gerar contato real de gente falando inglês, próximo passo é avaliar site
+bilíngue completo (`next-intl`) — decisão adiada de propósito pra ter dado
+real antes de investir mais.
+
+## Plano digital externo recebido de conhecido (2026-07-25)
+
+Recebemos um plano genérico de marketing digital imobiliário (template, não
+sob medida pra AFS — detalhes e ressalvas em
+`marketing/pesquisa/plano-estrategico-digital-imobiliario-bc-referencia-externa-2026-07-25.md`).
+Pressupõe orçamento e equipe que a AFS não tem hoje — não seguir como pacote
+fechado. Só as ideias baratas/solo (e-book isca de lead, calculadora de
+valorização, remarketing manual por WhatsApp, lead scoring simples) entram no
+backlog; o resto (CRM pago, chatbot, R$9-17mil/mês em Ads) fica pra quando
+houver equipe.
+
 **Pendências que só o usuário consegue fazer** (login Google):
 - Google Search Console — verificar propriedade, submeter sitemap, pedir
   indexação manual. Prioridade #1, resolve o gargalo central.

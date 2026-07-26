@@ -35,17 +35,27 @@ export interface BlogSection {
   links?: { label: string; href: string }[];
 }
 
+export interface BlogFaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
   category: "Investimento" | "Guia Prático" | "Bairros" | "Lifestyle";
-  city: "Balneário Camboriú" | "Itajaí" | "Itajaí e Balneário Camboriú";
+  city:
+    | "Balneário Camboriú"
+    | "Itajaí"
+    | "Itajaí e Balneário Camboriú"
+    | "Itajaí, Balneário Camboriú e Itapema";
   image: string;
   imageCredit: string;
   date: string;
   readingTime: number;
   sections: BlogSection[];
+  faq?: BlogFaqItem[];
   seoDescription: string;
   keywords: string[];
 }
